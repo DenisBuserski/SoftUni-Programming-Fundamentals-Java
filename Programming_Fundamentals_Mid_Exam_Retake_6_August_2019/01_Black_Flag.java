@@ -1,5 +1,3 @@
-package ProgrammingFundamentalsMidExamRetake6August2019;
-
 import java.util.Scanner;
 
 public class BlackFlag {
@@ -27,7 +25,6 @@ public class BlackFlag {
         } else {
             System.out.printf("Collected only %.2f%% of the plunder.", (gatheredPlunder / target) * 100);
         }
-
 
     }
 }
