@@ -1,5 +1,3 @@
-package ProgrammingFundamentalsMidExamRetake6August2019;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -40,7 +38,6 @@ public class ManOWar {
                         }
                     }
                     break;
-
                 case "Defend":
                     int start = Integer.parseInt(actions[1]);
                     int end = Integer.parseInt(actions[2]);
@@ -58,11 +55,9 @@ public class ManOWar {
                                     return;
                                 }
                             }
-
                         }
                     }
                     break;
-
                 case "Repair":
                     if (Integer.parseInt(actions[1]) > ship.size() - 1 || Integer.parseInt(actions[1]) < 0) {
                         command = scanner.nextLine();
@@ -76,7 +71,6 @@ public class ManOWar {
                         }
                     }
                     break;
-
                 case "Status":
                     int counter = 0;
                     for (int i = 0; i <= ship.size() - 1; i++) {
@@ -91,9 +85,9 @@ public class ManOWar {
                     break;
             }
 
-
             command = scanner.nextLine();
         }
+        
         int sumShip = 0;
         int sumWarship = 0;
 
