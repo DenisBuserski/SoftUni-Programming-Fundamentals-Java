@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class MatchDates {
+public class Match_Dates_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -21,9 +21,5 @@ public class MatchDates {
 
             System.out.printf("Day: %s, Month: %s, Year: %s%n", day, month, year);
         }
-
-
-
-
     }
 }
