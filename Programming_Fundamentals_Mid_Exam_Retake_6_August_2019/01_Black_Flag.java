@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class BlackFlag {
+public class 01_Black_Flag {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
