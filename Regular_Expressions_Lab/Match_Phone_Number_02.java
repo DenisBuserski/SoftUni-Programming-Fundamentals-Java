@@ -6,7 +6,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class MatchPhoneNumber {
+public class Match_Phone_Number_02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
