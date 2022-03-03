@@ -15,6 +15,5 @@ public class Match_Full_Name_01 {
         while (matcher.find()) {
             System.out.print(matcher.group("firstName") + " " + matcher.group("lastName") + " ");
         }
-
     }
 }
