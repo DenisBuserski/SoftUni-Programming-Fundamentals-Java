@@ -1,10 +1,8 @@
-package RegularExpressionsMoreExercise;
-
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class RageQuit {
+public class Rage_Quit_02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -22,12 +20,9 @@ public class RageQuit {
             for (int i = 0; i < n; i++) {
                 sb.append(word);
             }
-
         }
-
 
         System.out.printf("Unique symbols used: %d%n", sb.chars().distinct().count());
         System.out.println(sb);
-
     }
 }
