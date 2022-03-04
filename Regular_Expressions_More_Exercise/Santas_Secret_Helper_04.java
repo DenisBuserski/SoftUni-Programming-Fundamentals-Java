@@ -1,10 +1,8 @@
-package RegularExpressionsMoreExercise;
-
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class SantasSecretHelper {
+public class Santas_Secret_Helper_04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -34,5 +32,6 @@ public class SantasSecretHelper {
             }
             input = scanner.nextLine();
         }
+        
     }
 }
