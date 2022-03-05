@@ -1,12 +1,10 @@
-package ListsMoreExercise;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class TakeSkipRope {
+public class Take_Skip_Rope_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -36,9 +34,7 @@ public class TakeSkipRope {
             }
         }
 
-
         StringBuilder result = new StringBuilder();
-
         int timesToIterate = numbersList.size() / 2;
 
         for (int i = 0; i < timesToIterate; i++) {
@@ -60,8 +56,7 @@ public class TakeSkipRope {
                 nonNumbersList.subList(0, skipListCurrIndex).clear();
             }
         }
+        
         System.out.println(result);
-
-
     }
 }
