@@ -1,18 +1,15 @@
-package ListsMoreExercise;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class Messaging {
+public class Messaging_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         List<Integer> numbers = Arrays.stream(scanner.nextLine().split("\\s+")).map(Integer::parseInt).collect(Collectors.toList());
         String messageInput = scanner.nextLine();
         StringBuilder message = new StringBuilder();
-
 
         for (int i = 0; i < messageInput.length(); i++) {
             message.append(messageInput.charAt(i));
@@ -42,11 +39,5 @@ public class Messaging {
             number /= 10;
         }
         return sum;
-
-
-
-
-
-
     }
 }
