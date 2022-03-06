@@ -1,9 +1,7 @@
-package ListsMoreExercise;
-
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class MixedUpLists {
+public class Mixed_Up_Lists_04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -12,7 +10,6 @@ public class MixedUpLists {
 
         int smallerList = Math.min(firstList.size(), secondList.size());
         List<Integer> mixedList = mixTheLists(smallerList, firstList, secondList);
-
         List<Integer> sortedResult = new ArrayList<>();
 
         if (firstList.isEmpty()) {
@@ -24,7 +21,6 @@ public class MixedUpLists {
 
     private static List<Integer> mixTheLists(int smallerList, List<Integer> firstList, List<Integer> secondList) {
         List<Integer> mixedList = new ArrayList<>();
-
         for (int i = 0; i < smallerList; i++) {
             mixedList.add(firstList.get(0));
             mixedList.add(secondList.get(secondList.size() - 1));
@@ -45,4 +41,5 @@ public class MixedUpLists {
             System.out.print(numbers + " ");
         }
     }
+    
 }
