@@ -1,12 +1,10 @@
-package ListsMoreExercise;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class DrumSet {
+public class Drum_Set_05 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -38,19 +36,15 @@ public class DrumSet {
                             startingDrumSet.remove(index);
                             index--;
                         }
-
                     }
                 } else {
                     drumSet.set(index, newDrum);
-
                 }
-
-
             }
-
 
             input = scanner.nextLine();
         }
+        
         System.out.print(drumSet.toString().replaceAll("[\\[\\],]", ""));
         System.out.println();
         System.out.printf("Gabsy has %.2flv.", money);
