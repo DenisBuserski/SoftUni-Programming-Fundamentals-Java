@@ -1,18 +1,15 @@
-package ListsLab;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class ListManipulationAdvanced {
+public class List_Manipulation_Advanced_04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         List<Integer> numbers = Arrays.stream(scanner.nextLine().split(" ")).map(Integer::parseInt).collect(Collectors.toList());
 
         String command = scanner.nextLine();
-
         while (!command.equals("end")) {
 
             if (command.equals("end")) {
@@ -30,7 +27,6 @@ public class ListManipulationAdvanced {
                         System.out.println("No such number");
                     }
                     break;
-
                 case "Print":
                     String evenOrOdd = tokens[1];
                     if (evenOrOdd.equals("even")) { // Четни
@@ -39,7 +35,7 @@ public class ListManipulationAdvanced {
                                 System.out.print(number + " ");
                             }
                         }
-                    } else { // нечетни
+                    } else { 
                         for (Integer number : numbers) {
                             if (number % 2 == 1) {
                                 System.out.print(number + " ");
@@ -48,7 +44,6 @@ public class ListManipulationAdvanced {
                     }
                     System.out.println();
                     break;
-
                 case "Get":
                     int sum = 0;
                     for (Integer number : numbers) {
@@ -56,7 +51,6 @@ public class ListManipulationAdvanced {
                     }
                     System.out.println(sum);
                     break;
-
                 case "Filter":
                     String condition = tokens[1];
                     int number = Integer.parseInt(tokens[2]);
