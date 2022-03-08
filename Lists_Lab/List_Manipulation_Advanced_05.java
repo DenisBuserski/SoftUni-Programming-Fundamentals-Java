@@ -3,7 +3,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class List_Manipulation_Advanced_04 {
+public class List_Manipulation_Advanced_05 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
