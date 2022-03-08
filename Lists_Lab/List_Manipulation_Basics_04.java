@@ -1,12 +1,10 @@
-package ListsLab;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class ListManipulationBasics {
+public class List_Manipulation_Basics_04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -40,10 +38,7 @@ public class ListManipulationBasics {
                     numbers.add(indexToInsert, numberToInsert);
                     break;
             }
-
         }
         System.out.println(numbers.toString().replaceAll("[\\[\\],]", ""));
-
-
     }
 }
