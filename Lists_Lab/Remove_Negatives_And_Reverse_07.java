@@ -1,12 +1,10 @@
-package ListsLab;
-
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class RemoveNegativesAndReverse {
+public class Remove_Negatives_And_Reverse_07 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
