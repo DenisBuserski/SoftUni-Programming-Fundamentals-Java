@@ -1,11 +1,9 @@
-package ListsExercise;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class BombNumbers {
+public class Bomb_Numbers_05 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -19,7 +17,6 @@ public class BombNumbers {
 
         while (numbers.contains(bombNumber)) {
             int indexBomb = numbers.indexOf(bombNumber);
-
             int left = Math.max(0, indexBomb - bombPower);
             int right = Math.min(numbers.size() - 1, indexBomb + bombPower);
 
