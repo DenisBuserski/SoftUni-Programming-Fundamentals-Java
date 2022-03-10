@@ -1,10 +1,8 @@
-package ListsExercise;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class HouseParty {
+public class House_Party_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -31,9 +29,8 @@ public class HouseParty {
                     System.out.printf("%s is not in the list!%n", name);
                 }
             }
-
-
         }
+        
         for (int i = 0; i < names.size(); i++) {
             System.out.printf("%s%n", names.get(i));
         }
