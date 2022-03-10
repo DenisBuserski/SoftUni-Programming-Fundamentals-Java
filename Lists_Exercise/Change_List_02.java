@@ -1,11 +1,9 @@
-package ListsExercise;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class ChangeList {
+public class Change_List_02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -24,33 +22,20 @@ public class ChangeList {
 
             if (command1.equals("Delete")) {
                 int element = Integer.parseInt(token[1]);
+                
                 for (int i = 0; i < numbers.size(); i++) {
-
                     if (numbers.get(i) == element) {
                         numbers.remove(i);
-
                     }
                 }
-
             } else {
                 int element = Integer.parseInt(token[1]);
                 int index = Integer.parseInt(token[2]);
-
                 numbers.add(index, element);
-
-
             }
-
-
-
-
-
-
             command = scanner.nextLine();
         }
+        
         System.out.print(numbers.toString().replaceAll("[\\[\\],]", ""));
-
-
-
     }
 }
