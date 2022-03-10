@@ -1,11 +1,9 @@
-package ListsExercise;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class ListOperations {
+public class List_Operations_04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -47,27 +45,20 @@ public class ListOperations {
                             int lastNumber = numbers.get(numbers.size() - 1);
                             numbers.remove(numbers.size() - 1);
                             numbers.add(0, lastNumber);
-
-
                         }
-
                     } else if (direction.equals("left")) {
                         for (int i = 1; i <= count; i++) {
                             int firstNumber = numbers.get(0);
                             numbers.remove(0);
                             numbers.add(firstNumber);
-
                         }
                     }
-
                     break;
             }
-
 
             input = scanner.nextLine();
         }
         printList(numbers);
-
 
     }
 
@@ -84,4 +75,5 @@ public class ListOperations {
             return false;
         }
     }
+    
 }
