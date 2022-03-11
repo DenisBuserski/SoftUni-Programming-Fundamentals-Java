@@ -1,11 +1,9 @@
-package ListsExercise;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class CardsGame {
+public class Cards_Game_06 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -31,6 +29,7 @@ public class CardsGame {
                 deck2.remove(0);
             }
         }
+        
         if (deck1.isEmpty()) {
             for (int i = 0; i < deck2.size(); i++) {
                 sum += deck2.get(i);
