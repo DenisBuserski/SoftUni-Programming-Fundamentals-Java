@@ -1,12 +1,10 @@
-package ListsExercise;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class AnonymousThreat {
+public class Anonymous_Threat_08 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -22,7 +20,6 @@ public class AnonymousThreat {
                     int endIndex = Integer.parseInt(tokens[2]);
                     mergeMyLine(lineOfChars, startIndex, endIndex);
                     break;
-
                 case "divide":
                     int indexDivide = Integer.parseInt(tokens[1]);
                     int divideTimes = Integer.parseInt(tokens[2]);
@@ -35,7 +32,6 @@ public class AnonymousThreat {
                     int counterAdded = 0;
 
                     for (int i = 0; i < currentElement.length(); i++) {
-
                         char symbol = currentElement.charAt(i);
                         separatedElement += symbol;
                         count++;
@@ -58,14 +54,11 @@ public class AnonymousThreat {
             input = scanner.nextLine();
         }
 
-        // String[] elements =
-        // System.out.println(lineOfChars.toString());
         for (String lineOfChar : lineOfChars) {
             System.out.print(lineOfChar + " ");
         }
 
     }
-
 
     private static void mergeMyLine(List<String> lineOfChars, int startIndex, int endIndex) {
         if (startIndex < 0) {
@@ -91,9 +84,6 @@ public class AnonymousThreat {
             characters.add(firstElement);
         }
         return characters;
-
-
-
-
     }
+    
 }
