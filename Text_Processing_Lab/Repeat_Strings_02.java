@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Repeat_Strings_03 {
+public class Repeat_Strings_02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
