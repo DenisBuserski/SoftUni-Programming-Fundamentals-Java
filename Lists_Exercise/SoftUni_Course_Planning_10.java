@@ -1,11 +1,9 @@
-package ListsExercise;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class SoftUniCoursePlanning {
+public class SoftUni_Course_Planning_10 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -20,20 +18,16 @@ public class SoftUniCoursePlanning {
 
             switch (command) {
                 case "Add":
-                    //"Add:Databases" -> ["Add", "Databases"]
                     if (!schedule.contains(lessonTitle)) {
                         schedule.add(lessonTitle);
                     }
                     break;
-
                 case "Insert":
-                    //Insert:Arrays:0 -> ["Insert", "Arrays", "0"]
                     int index = Integer.parseInt(tokens[2]);
                     if (!schedule.contains(lessonTitle)) {
                         schedule.add(index, lessonTitle);
                     }
                     break;
-
                 case "Remove":
                     if (schedule.contains(lessonTitle)) {
                         schedule.remove(lessonTitle);
@@ -44,10 +38,7 @@ public class SoftUniCoursePlanning {
                         schedule.remove(indexLesson + 1);
                     }
                     break;
-
                 case "Swap":
-                    //Arrays, Lists, Methods, Databases, Databases-Exercise
-                    //Swap:Lists:Databases
                     String lessonTitle2 = input.split(":")[2];
                     if (schedule.contains(lessonTitle) && schedule.contains(lessonTitle2)) {
                         int lesson1Index = schedule.indexOf(lessonTitle);
@@ -67,12 +58,9 @@ public class SoftUniCoursePlanning {
                         }
                     }
                     break;
-
                 case "Exercise":
-                    //упражнение -> Objects-Exercise
-                    //[Data Types, Objects, Lists]
                     String exercise = lessonTitle + "-Exercise";
-                    //слагаме упражнение ако има лекция и го няма
+
                     int indexLessonTitle = schedule.indexOf(lessonTitle);
                     if (schedule.contains(lessonTitle)) {
                         //има ли упражнение
@@ -99,7 +87,7 @@ public class SoftUniCoursePlanning {
         for (String element : elements) {
             System.out.println(count + "." + element);
             count++;
-
         }
     }
+    
 }
