@@ -1,8 +1,6 @@
-package TextProcessingLab;
-
 import java.util.Scanner;
 
-public class ReverseStrings {
+public class Reverse_Strings_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -15,7 +13,6 @@ public class ReverseStrings {
                 reversed += input.charAt(i);
             }
             System.out.printf("%s = %s%n", input, reversed);
-
 
             input = scanner.nextLine();
         }
