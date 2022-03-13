@@ -1,8 +1,6 @@
-package TextProcessingLab;
-
 import java.util.Scanner;
 
-public class TextFilter {
+public class Text_Filter_04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -16,9 +14,10 @@ public class TextFilter {
                 input = input.replace(forbiddenWord, wordOfStars);
             }
         }
+        
         System.out.println(input);
-
     }
+    
     private static String convertWordToStars(String word) {
         StringBuilder wordOfStars = new StringBuilder();
 
@@ -27,6 +26,5 @@ public class TextFilter {
         }
         return wordOfStars.toString();
     }
-
 
 }
