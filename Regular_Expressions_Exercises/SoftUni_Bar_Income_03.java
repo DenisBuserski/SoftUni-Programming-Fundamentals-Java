@@ -1,10 +1,8 @@
-package RegularExpressionsExercises;
-
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class SoftUniBarIncome {
+public class SoftUni_Bar_Income_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -29,6 +27,7 @@ public class SoftUniBarIncome {
             }
             input = scanner.nextLine();
         }
+        
         System.out.printf("Total income: %.2f", totalPrice);
     }
 }
