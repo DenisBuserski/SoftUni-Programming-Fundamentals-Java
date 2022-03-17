@@ -1,9 +1,7 @@
-package ArraysMoreExercise;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class EncryptSortAndPrintArray {
+public class Encrypt_Sort_And_Print_Array_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -36,8 +34,8 @@ public class EncryptSortAndPrintArray {
                 }
             }
             array [i] = sum;
-
         }
+        
         Arrays.sort(array);
         for (int print : array) {
             System.out.println(print);
