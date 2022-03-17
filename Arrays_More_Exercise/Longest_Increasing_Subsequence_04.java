@@ -1,9 +1,7 @@
-package ArraysMoreExercise;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class LongestIncreasingSubsequence {
+public class Longest_Increasing_Subsequence_04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -13,6 +11,7 @@ public class LongestIncreasingSubsequence {
         for (int i = 0; i < array1.length; i++) {
             numbers[i] = Integer.parseInt(array1[i]);
         }
+        
         int maxLength = 0;
         int lastIndex = -1;
         int[] len = new int[numbers.length];
@@ -28,11 +27,13 @@ public class LongestIncreasingSubsequence {
                     previous[i] = k;
                 }
             }
+            
             if (len[i] > maxLength) {
                 maxLength = len[i];
                 lastIndex = i;
             }
         }
+        
         int[] lis = new int[maxLength];
         int currentIndex = maxLength - 1;
 
@@ -41,8 +42,10 @@ public class LongestIncreasingSubsequence {
             currentIndex--;
             lastIndex = previous[lastIndex];
         }
+        
         for (int print = 0; print < lis.length; print++) {
             System.out.print(lis[print] + " ");
         }
+        
     }
 }
