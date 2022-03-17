@@ -1,8 +1,6 @@
-package ArraysMoreExercise;
-
 import java.util.Scanner;
 
-public class RecursiveFibonacci {
+public class Recursive_Fibonacci_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -21,8 +19,7 @@ public class RecursiveFibonacci {
             System.out.println(fibonacci[n - 1]);
         } else {
             System.out.println(n);
-
-
         }
+        
     }
 }
