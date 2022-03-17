@@ -1,8 +1,6 @@
-package ArraysMoreExercise;
-
 import java.util.Scanner;
 
-public class PascalTriangle {
+public class Pascal_Triangle_02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
