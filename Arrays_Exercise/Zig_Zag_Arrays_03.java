@@ -1,8 +1,6 @@
-package ArraysExercise;
-
 import java.util.Scanner;
 
-public class ZigZagArrays {
+public class Zig_Zag_Arrays_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -25,12 +23,9 @@ public class ZigZagArrays {
                 line1[i] = firstElement;
                 line2[i] = secondElement;
             }
-
         }
+        
         System.out.println(String.join(" ", line1));
         System.out.println(String.join(" ", line2));
-
-
-
     }
 }
