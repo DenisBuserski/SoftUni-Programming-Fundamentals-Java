@@ -1,9 +1,7 @@
-package ArraysExercise;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class TopIntegers {
+public class Top_Integers_05 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -18,8 +16,8 @@ public class TopIntegers {
             }
 
             boolean isBigger = false;
+            
             for (int i = index + 1; i <= numbers.length - 1; i++) {
-
                 if (number > numbers[i]) {
                     isBigger = true;
                 } else {
@@ -27,10 +25,10 @@ public class TopIntegers {
                     break;
                 }
             }
+            
             if (isBigger) {
                 System.out.print(number + " ");
             }
-
         }
 
     }
