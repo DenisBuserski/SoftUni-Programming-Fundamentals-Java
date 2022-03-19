@@ -1,9 +1,7 @@
-package ArraysExercise;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ArrayRotation {
+public class Array_Rotation_04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -19,8 +17,10 @@ public class ArrayRotation {
             }
             numbers[numbers.length - 1] = firstNumber;
         }
+        
         for (int number : numbers) {
             System.out.print(number + " ");
         }
+        
     }
 }
