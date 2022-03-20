@@ -1,12 +1,9 @@
-package ArraysExercise;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class MagicSum {
+public class Magic_Sum_08 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
 
         int [] numbers = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(e -> Integer.parseInt(e)).toArray();
 
@@ -26,6 +23,8 @@ public class MagicSum {
                     System.out.printf("%d %d%n", number, number2);
                 }
             }
+            
         }
+        
     }
 }
