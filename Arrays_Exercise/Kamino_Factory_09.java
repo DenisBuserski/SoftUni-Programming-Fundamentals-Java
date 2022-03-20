@@ -1,12 +1,9 @@
-package ArraysExercise;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class KaminoFactory {
+public class Kamino_Factory_09 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
 
         String command = "";
         int bestSequence = -1;
@@ -15,13 +12,10 @@ public class KaminoFactory {
         int bestSum = 0;
 
         int sample = 0;
-
         int length = Integer.parseInt(scanner.nextLine());
-
         int[] bestDna = new int[length];
 
         command = scanner.nextLine();
-
         while(!command.equals("Clone them!")){
             int[] curSample = Arrays.stream(command.split("!+")).mapToInt(value -> Integer.parseInt(value)).toArray();
             sample++;
@@ -43,11 +37,11 @@ public class KaminoFactory {
                     curLength = 0;
                 }
             }
-            //calc the sum in the current sample
+            
             for (int j = 0; j < curSample.length; j++) {
                 curSum += curSample[j];
             }
-            //finding the index
+            
             int curStartIndex = curEndIndex - curBestLength +1;
             boolean isBetter = false;
 
@@ -70,6 +64,7 @@ public class KaminoFactory {
                 bestSum = curSum;
                 bestSampleIndex = sample;
             }
+            
             command = scanner.nextLine();
         }
 
@@ -78,9 +73,5 @@ public class KaminoFactory {
             System.out.print(bestDna[i] + " ");
         }
 
-
-
-
     }
 }
-
