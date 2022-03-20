@@ -1,13 +1,11 @@
-package ArraysExercise;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class MaxSequenceOfEqualElements {
+public class Max_Sequence_Of_Equal_Elements_07 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int[] array = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(e -> Integer.parseInt(e)).toArray(); // Получавам числата
+        int[] array = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(e -> Integer.parseInt(e)).toArray(); 
         int max = Integer.MIN_VALUE;
         int maxNumber = Integer.MIN_VALUE;
         int leftMaxNumber = Integer.MIN_VALUE;
@@ -20,10 +18,12 @@ public class MaxSequenceOfEqualElements {
 
             if (number == array[i + 1]) { // Проверявам дали е равно на числото след него
                 maxSequence++;
+                
                 if (maxSequence > max) {
                     max = maxSequence;
                     maxNumber = number;
                 }
+                
                 if (max < 0) {
                     max = leftMax;
                     leftMaxNumber = number;
@@ -32,6 +32,7 @@ public class MaxSequenceOfEqualElements {
                 maxSequence = 0;
             }
         }
+        
         if (max - leftMax == 0) {
             for (int i = 1; i <= max + 1; i++) {
                 System.out.print(leftMaxNumber + " ");
@@ -41,6 +42,6 @@ public class MaxSequenceOfEqualElements {
                 System.out.print(maxNumber + " ");
             }
         }
+        
     }
 }
-
