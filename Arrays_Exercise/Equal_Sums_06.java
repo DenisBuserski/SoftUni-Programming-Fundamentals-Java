@@ -1,9 +1,7 @@
-package ArraysExercise;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class EqualSums {
+public class Equal_Sums_06 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -28,10 +26,10 @@ public class EqualSums {
                 isFound = true;
             }
         }
+        
         if (!isFound) {
             System.out.println("no");
         }
-
 
     }
 }
