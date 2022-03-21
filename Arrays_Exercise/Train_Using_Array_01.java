@@ -1,8 +1,6 @@
-package ArraysExercise;
-
 import java.util.Scanner;
 
-public class TrainUsingArray {
+public class Train_Using_Array_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -21,6 +19,5 @@ public class TrainUsingArray {
 
         System.out.println();
         System.out.println(sum);
-
     }
 }
