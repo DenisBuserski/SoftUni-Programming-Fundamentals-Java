@@ -1,9 +1,7 @@
-package ArraysExercise;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class LadyBugs {
+public class Lady_Bugs_10 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -15,12 +13,11 @@ public class LadyBugs {
         for (int ladyBugIndex : ladyBugsIndexes) {
             if (ladyBugIndex >= 0 && ladyBugIndex <= field.length - 1) {
                 field[ladyBugIndex] = 1;
-
             }
         }
+        
         String command = scanner.nextLine();
         while (!command.equals("end")) {
-
             String[] tokens = command.split(" ");
             int index = Integer.parseInt(tokens[0]);
             String direction = tokens[1];
@@ -46,14 +43,15 @@ public class LadyBugs {
                     if (index >= 0) {
                         field[index] = 1;
                     }
-
                 }
             }
+            
             command = scanner.nextLine();
-
         }
+        
         for (int number : field) {
             System.out.print(number + " ");
         }
+        
     }
 }
