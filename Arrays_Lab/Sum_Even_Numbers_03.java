@@ -1,9 +1,7 @@
-package ArraysLab;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class SumEvenNumbers {
+public class Sum_Even_Numbers_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -18,6 +16,7 @@ public class SumEvenNumbers {
                 sum += numbers[i];
             }
         }
+        
         System.out.println(sum);
     }
 }
