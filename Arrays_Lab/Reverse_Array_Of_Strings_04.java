@@ -1,8 +1,6 @@
-package ArraysLab;
-
 import java.util.Scanner;
 
-public class ReverseArrayOfStrings {
+public class Reverse_Array_Of_Strings_04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -15,11 +13,5 @@ public class ReverseArrayOfStrings {
         }
 
         System.out.println(String.join(" ", input));
-
-
-
-
-
-
     }
 }
