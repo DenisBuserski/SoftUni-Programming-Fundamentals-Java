@@ -1,9 +1,7 @@
-package ArraysLab;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class EqualArrays {
+public class Equal_Arrays_06 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -24,13 +22,13 @@ public class EqualArrays {
 
         for (int i = 0; i < firstArray.length; i++) {
             sum += firstArray[i];
-
             if (firstArray[i] != secondArray[i]) {
                 System.out.printf("Arrays are not identical. Found difference at %d index.", i);
                 areIdentical = false;
                 break;
             }
         }
+        
         if (areIdentical) {
             System.out.printf("Arrays are identical. Sum: %d", sum);
         }
