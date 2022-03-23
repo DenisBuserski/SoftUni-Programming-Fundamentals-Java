@@ -1,8 +1,6 @@
-package DataTypesAndVariablesMoreExercise;
-
 import java.util.Scanner;
 
-public class DataTypeFinder {
+public class Data_Type_Finder_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -10,23 +8,17 @@ public class DataTypeFinder {
 
         while (!input.equals("END")) {
             String type = "";
-
-            // boolean
-            if (input.equalsIgnoreCase("true") || input.equalsIgnoreCase("false")) {
+            
+            if (input.equalsIgnoreCase("true") || input.equalsIgnoreCase("false")) { // boolean
                 type = "boolean";
-            }
-            // char; int
-            else if (input.length() == 1) {
+            } else if (input.length() == 1) { // char; int
                 char symbol = input.charAt(0);
                 if (symbol < 47 || symbol > 58) {
                     type = "character";
-                }
-                else {
+                } else {
                     type = "integer";
                 }
-            }
-            // string; double; int
-            else {
+            } else { // string; double; int
                 boolean isString = false;
                 boolean isFloat = false;
 
@@ -43,12 +35,10 @@ public class DataTypeFinder {
 
                 if (isString) {
                     type = "string";
-                }
-                else {
+                } else {
                     if (isFloat) {
                         type = "floating point";
-                    }
-                    else {
+                    } else {
                         type = "integer";
                     }
                 }
@@ -57,5 +47,6 @@ public class DataTypeFinder {
 
             input = scanner.nextLine();
         }
+        
     }
 }
