@@ -1,9 +1,7 @@
-package ArraysLab;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class CondenseArrayToNumber {
+public class Condense_Array_To_Number_07 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -17,11 +15,7 @@ public class CondenseArrayToNumber {
             }
             input = condensed;
         }
+        
         System.out.println(input[0]);
-
-
-
-
-
     }
 }
