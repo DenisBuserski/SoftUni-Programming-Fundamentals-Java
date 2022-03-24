@@ -1,8 +1,6 @@
-package DataTypesAndVariablesMoreExercise;
-
 import java.util.Scanner;
 
-public class DecryptingMessage {
+public class Decrypting_Message_05 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -22,6 +20,7 @@ public class DecryptingMessage {
 
             result += newLetter;
         }
+        
         System.out.println(result);
     }
 }
