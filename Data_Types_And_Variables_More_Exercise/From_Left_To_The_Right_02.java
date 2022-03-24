@@ -1,8 +1,6 @@
-package DataTypesAndVariablesMoreExercise;
-
 import java.util.Scanner;
 
-public class FromLeftToTheRight {
+public class From_Left_To_The_Right_02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -11,10 +9,9 @@ public class FromLeftToTheRight {
         for (int i = 1; i <= n; i++) {
             String input = scanner.nextLine(); // Прочитане на всички числа на 1 ред като текст
 
-            for (int j = 0; j <= input.length(); j++) { // Разглеждаме числата като текст
+            for (int j = 0; j <= input.length(); j++) { // Разглеждане числата като текст
                 int spaceBetweenNumbers = 0;
-
-                char space = input.charAt(j); // Прочитаме всеки знак от текста по отделно
+                char space = input.charAt(j); // Прочитане всеки знак от текста по отделно
 
                 if (space == 32) {
                     spaceBetweenNumbers = j;
@@ -59,6 +56,7 @@ public class FromLeftToTheRight {
                     if (maxNumber < 0) {
                         maxNumber *= -1;
                     }
+                    
                     while (maxNumber > 0) {
                         result += maxNumber % 10;
                         maxNumber /= 10;
@@ -68,5 +66,6 @@ public class FromLeftToTheRight {
                 }
             }
         }
+        
     }
 }
