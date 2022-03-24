@@ -1,8 +1,6 @@
-package DataTypesAndVariablesMoreExercise;
-
 import java.util.Scanner;
 
-public class RefactoringPrimeChecker {
+public class Refactoring_Prime_Checker_04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
