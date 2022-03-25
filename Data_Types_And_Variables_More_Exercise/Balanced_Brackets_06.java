@@ -1,8 +1,6 @@
-package DataTypesAndVariablesMoreExercise;
-
 import java.util.Scanner;
 
-public class BalancedBrackets {
+public class Balanced_Brackets_06 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -15,9 +13,7 @@ public class BalancedBrackets {
 
             if (input.equals("(")) {
                 countIn++;
-            }
-
-            else if (input.equals(")")) {
+            } else if (input.equals(")")) {
                 countOut++;
                 if (countOut - countIn != 0) {
                     break;
@@ -30,5 +26,6 @@ public class BalancedBrackets {
         } else {
             System.out.println("UNBALANCED");
         }
+        
     }
 }
