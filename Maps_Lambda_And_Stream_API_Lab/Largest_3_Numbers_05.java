@@ -1,9 +1,7 @@
-package MapsLambdaAndStreamAPILab;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Largest3Numbers {
+public class Largest_3_Numbers_05 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
