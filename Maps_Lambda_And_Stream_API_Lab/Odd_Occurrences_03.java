@@ -1,15 +1,12 @@
-package MapsLambdaAndStreamAPILab;
-
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.Scanner;
 
-public class OddOccurrences {
+public class Odd_Occurrences_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         String [] words = scanner.nextLine().split("\\s+");
-
         LinkedHashMap<String, Integer> counts = new LinkedHashMap<>();
 
         for (String word : words) {
@@ -36,5 +33,6 @@ public class OddOccurrences {
                 System.out.print(", ");
             }
         }
+        
     }
 }
