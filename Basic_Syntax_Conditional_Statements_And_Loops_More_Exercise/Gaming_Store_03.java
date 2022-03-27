@@ -1,19 +1,17 @@
-package BasicSyntaxConditionalStatementsAndLoopsMoreExercise;
-
 import java.util.Scanner;
 
-public class GamingStore {
+public class Gaming_Store_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         double money = Double.parseDouble(scanner.nextLine());
-
         double gamePrice = 0;
         double moneySpend = 0;
 
         String gameName = "";
         while (!gameName.equals("Game Time")) {
             gameName = scanner.nextLine();
+            
             if (money <= 0) {
                 System.out.println("Out of money!");
                 break;
@@ -88,17 +86,13 @@ public class GamingStore {
                 default:
                     System.out.println("Not Found");
                     break;
-
             }
-
-
-
         }
+        
+        
         if (money > 0) {
-
             System.out.printf("Total spent: $%.2f. Remaining: $%.2f", moneySpend, money);
         }
-
 
     }
 }
