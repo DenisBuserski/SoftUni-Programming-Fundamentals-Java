@@ -1,8 +1,6 @@
-package BasicSyntaxConditionalStatementsAndLoopsMoreExercise;
-
 import java.util.Scanner;
 
-public class ReverseString {
+public class Reverse_String_04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
