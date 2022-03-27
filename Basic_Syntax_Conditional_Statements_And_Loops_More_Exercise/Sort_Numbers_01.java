@@ -1,8 +1,6 @@
-package BasicSyntaxConditionalStatementsAndLoopsMoreExercise;
-
 import java.util.Scanner;
 
-public class SortNumbers {
+public class Sort_Numbers_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -24,6 +22,7 @@ public class SortNumbers {
                 third = num2;
             }
         }
+        
         if (num2 > num1 && num2 > num3) {
             first = num2;
             if (num1 > num3) {
@@ -34,6 +33,7 @@ public class SortNumbers {
                 third = num1;
             }
         }
+        
         if (num3 > num1 && num3 > num2) {
             first = num3;
             if (num1 > num2) {
@@ -44,8 +44,7 @@ public class SortNumbers {
                 third = num1;
             }
         }
+        
         System.out.printf("%d%n%d%n%d", first, second, third);
-
-
     }
 }
