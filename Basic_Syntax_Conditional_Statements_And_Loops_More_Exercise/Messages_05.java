@@ -1,8 +1,6 @@
-package BasicSyntaxConditionalStatementsAndLoopsMoreExercise;
-
 import java.util.Scanner;
 
-public class Messages {
+public class Messages_05 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -79,10 +77,11 @@ public class Messages {
                     letter = "z";
                 }
             }
+            
             word += letter;
         }
+        
         System.out.println(word);
-
 
     }
 }
