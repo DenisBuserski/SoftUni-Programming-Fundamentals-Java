@@ -1,8 +1,6 @@
-package TextProcessingMoreExercise;
-
 import java.util.Scanner;
 
-public class MorseCodeTranslator {
+public class Morse_Code_Translator_04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -26,9 +24,8 @@ public class MorseCodeTranslator {
                     System.out.print(alpha[index1]);
                 }
             }
-
-
         }
+        
     }
 }
 
