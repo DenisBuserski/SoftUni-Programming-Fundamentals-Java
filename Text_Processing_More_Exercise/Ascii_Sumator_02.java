@@ -1,8 +1,6 @@
-package TextProcessingMoreExercise;
-
 import java.util.Scanner;
 
-public class AsciiSumator {
+public class Ascii_Sumator_02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -25,5 +23,6 @@ public class AsciiSumator {
             result += number;
         }
         System.out.println(result);
+        
     }
 }
