@@ -1,11 +1,9 @@
-package TextProcessingMoreExercise;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class TreasureFinder {
+public class Treasure_Finder_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -16,8 +14,7 @@ public class TreasureFinder {
         StringBuilder type = new StringBuilder();
         StringBuilder coordinates = new StringBuilder();
 
-        while (!input.equals("find")) { // Прочитаме редовете
-
+        while (!input.equals("find")) { 
             int keyCount = 0;
             for (int i = 0; i <= input.length() - 1; i++) {
 
@@ -32,8 +29,8 @@ public class TreasureFinder {
                 String letter = Character.toString(newLetter);
 
                 output.append(letter);
-
             }
+            
             String outputWord = output.toString();
             for (int i = 0; i <= outputWord.length() - 1; i++) {
                 if (outputWord.charAt(i) == '&') {
@@ -47,6 +44,7 @@ public class TreasureFinder {
                     break;
                 }
             }
+            
             for (int i = 0; i <= outputWord.length() - 1; i++) {
                 if (outputWord.charAt(i) == '<') {
                     for (int i1 = i; output.charAt(i1) != '>'; i1++) {
@@ -58,12 +56,15 @@ public class TreasureFinder {
                     }
                 }
             }
+            
             System.out.printf("Found %s at %s%n", type, coordinates.replace(0,1,""));
 
             output = new StringBuilder();
             type = new StringBuilder();
             coordinates = new StringBuilder();
+            
             input = scanner.nextLine();
         }
+        
     }
 }
