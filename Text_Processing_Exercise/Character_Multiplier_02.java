@@ -1,8 +1,6 @@
-package TextProcessingExercise;
-
 import java.util.Scanner;
 
-public class CharacterMultiplier {
+public class Character_Multiplier_02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -58,5 +56,5 @@ public class CharacterMultiplier {
         }
         System.out.println(sumTotal);
     }
+    
 }
-
