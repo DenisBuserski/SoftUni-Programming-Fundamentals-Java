@@ -1,8 +1,6 @@
-package TextProcessingMoreExercise;
-
 import java.util.Scanner;
 
-public class HTML {
+public class HTML_05 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -16,10 +14,8 @@ public class HTML {
         while (!comments.equals("end of comments")) {
             System.out.printf("<div>%n   %s%n</div>%n", comments);
 
-
             comments = scanner.nextLine();
         }
-
 
     }
 }
