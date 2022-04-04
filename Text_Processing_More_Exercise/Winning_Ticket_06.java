@@ -1,12 +1,14 @@
-package TextProcessingMoreExercise;
-
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class WinningTicket {
+public class Winning_Ticket_06 {
+    
+    private static final String REGEX = "(?=.{20}).*?(?=(?<ch>[@#$^]))(?<match>\\k<ch>{6,}).*(?<=.{10})\\k<match>.*";
+    private static final Pattern PATTERN = Pattern.compile(REGEX);
+    private static final Pattern SEPARATOR = Pattern.compile("\\s*,\\s*");
+    
     public static void main(String[] args) {
-
         Scanner scan = new Scanner(System.in);
         String[] tickets = SEPARATOR.split(scan.nextLine().trim());
 
@@ -27,8 +29,4 @@ public class WinningTicket {
         }
 
     }
-    private static final String REGEX = "(?=.{20}).*?(?=(?<ch>[@#$^]))(?<match>\\k<ch>{6,}).*(?<=.{10})\\k<match>.*";
-    private static final Pattern PATTERN = Pattern.compile(REGEX);
-    private static final Pattern SEPARATOR = Pattern.compile("\\s*,\\s*");
-
 }
