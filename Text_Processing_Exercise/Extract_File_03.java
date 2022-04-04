@@ -1,8 +1,6 @@
-package TextProcessingExercise;
-
 import java.util.Scanner;
 
-public class ExtractFile {
+public class Extract_File_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -15,9 +13,5 @@ public class ExtractFile {
         System.out.print("File name: " + fileName);
         System.out.println();
         System.out.print("File extension: " + extension);
-
-
-
-
     }   
 }
