@@ -1,8 +1,6 @@
-package TextProcessingExercise;
-
 import java.util.Scanner;
 
-public class StringExplosion {
+public class String_Explosion_07 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -19,8 +17,7 @@ public class StringExplosion {
                 sum--;
             }
         }
+        
         System.out.println(text.toString());
-
-
     }
 }
