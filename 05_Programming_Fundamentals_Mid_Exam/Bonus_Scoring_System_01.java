@@ -1,8 +1,6 @@
-package ProgrammingFundamentalsMidExam0501;
-
 import java.util.Scanner;
 
-public class BonusScoringSystem {
+public class Bonus_Scoring_System_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -25,7 +23,5 @@ public class BonusScoringSystem {
 
         System.out.printf("Max Bonus: %d.%n", (int) Math.ceil(maxBonus));
         System.out.printf("The student has attended %d lectures.", (int) studentAttendances);
-
     }
 }
-// {total bonus} = {student attendances} / {course lectures} * (5 + {additional bonus})
