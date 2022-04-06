@@ -1,8 +1,6 @@
-package ProgrammingFundamentalsMidExam0501;
-
 import java.util.Scanner;
 
-public class MuOnline {
+public class MuOnline_02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
