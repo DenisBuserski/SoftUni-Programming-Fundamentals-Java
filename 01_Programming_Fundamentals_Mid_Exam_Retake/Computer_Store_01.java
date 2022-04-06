@@ -1,13 +1,10 @@
-package ProgrammingFundamentalsMidExamRetake01;
-
 import java.util.Scanner;
 
-public class ComputerStore {
+public class Computer_Store_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         String input = scanner.nextLine();
-
         double totalPriceWithoutTax = 0;
 
         while (!input.equals("special") && !input.equals("regular")) {
@@ -41,7 +38,6 @@ public class ComputerStore {
                     "-----------%n" +
                     "Total price: %.2f$%n", totalPriceWithoutTax, tax, finalPrice);
         }
-
 
     }
 }
