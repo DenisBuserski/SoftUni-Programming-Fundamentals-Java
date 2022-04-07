@@ -1,8 +1,6 @@
-package ProgrammingFundamentalsFinalExam04;
-
 import java.util.Scanner;
 
-public class PasswordReset {
+public class Password_Reset_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -11,6 +9,7 @@ public class PasswordReset {
         String input;
         while (!"Done".equals(input = scanner.nextLine())) {
             String[] commands = input.split(" ");
+            
             switch (commands[0]) {
                 case "TakeOdd":
                     StringBuilder newPassword = new StringBuilder();
