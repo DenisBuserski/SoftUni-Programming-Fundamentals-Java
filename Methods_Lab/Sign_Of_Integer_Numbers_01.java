@@ -1,8 +1,6 @@
-package MethodsLab;
-
 import java.util.Scanner;
 
-public class SignOfIntegerNumbers {
+public class Sign_Of_Integer_Numbers_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
