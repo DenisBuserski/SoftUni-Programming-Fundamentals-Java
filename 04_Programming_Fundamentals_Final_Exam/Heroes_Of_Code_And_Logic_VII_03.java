@@ -1,8 +1,6 @@
-package ProgrammingFundamentalsFinalExam04;
-
 import java.util.*;
 
-public class HeroesOfCodeAndLogicVII {
+public class Heroes_Of_Code_And_Logic_VII_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -30,7 +28,6 @@ public class HeroesOfCodeAndLogicVII {
                 case "CastSpell":
                     int MPNeeded = Integer.parseInt(commandInputArray[2]);
                     String spellName = commandInputArray[3];
-
                     int HP = heroData.get(name).get(0);
                     int MPBeforeSpell = heroData.get(name).get(1);
                     int MPAfterSpell = 0;
@@ -46,7 +43,6 @@ public class HeroesOfCodeAndLogicVII {
                 case "TakeDamage":
                     int damage = Integer.parseInt(commandInputArray[2]);
                     String attacker = commandInputArray[3];
-
                     int currentHP = heroData.get(name).get(0);
                     int currentMP = heroData.get(name).get(1);
                     int HPAfterFight = currentHP - damage;
@@ -61,10 +57,10 @@ public class HeroesOfCodeAndLogicVII {
                     break;
                 case "Recharge":
                     int amount = Integer.parseInt(commandInputArray[2]);
-
                     int currentHP1 = heroData.get(name).get(0);
                     int currentMP1 = heroData.get(name).get(1);
                     int newMP = currentMP1 + amount;
+                    
                     if (newMP > 200) {
                         System.out.printf("%s recharged for %d MP!%n", name, 200 - currentMP1);
                         heroData.put(name, Arrays.asList(currentHP1, 200));
@@ -75,11 +71,10 @@ public class HeroesOfCodeAndLogicVII {
                     break;
                 case "Heal":
                     int healAmount = Integer.parseInt(commandInputArray[2]);
-
-
                     int currentHP11 = heroData.get(name).get(0);
                     int currentMP11 = heroData.get(name).get(1);
                     int newHP = currentHP11 + healAmount;
+                    
                     if (newHP > 100) {
                         System.out.printf("%s healed for %d HP!%n", name, 100 - currentHP11);
                         heroData.put(name, Arrays.asList(100, currentMP11));
@@ -89,6 +84,7 @@ public class HeroesOfCodeAndLogicVII {
                     }
                     break;
             }
+            
             commandInput = scanner.nextLine();
         }
 
@@ -99,7 +95,6 @@ public class HeroesOfCodeAndLogicVII {
             }
             return result;
         }).forEach(entry -> System.out.printf("%s%n  HP: %d%n  MP: %d%n", entry.getKey(), entry.getValue().get(0), entry.getValue().get(1)));
-
 
     }
 }
