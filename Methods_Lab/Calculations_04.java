@@ -1,8 +1,6 @@
-package MethodsLab;
-
 import java.util.Scanner;
 
-public class Calculations {
+public class Calculations_04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -25,7 +23,6 @@ public class Calculations {
                 break;
         }
 
-
     }
 
     private static void addResult(String command, int number1, int number2) {
@@ -47,4 +44,5 @@ public class Calculations {
         int result = number1 / number2;
         System.out.println(result);
     }
+    
 }
