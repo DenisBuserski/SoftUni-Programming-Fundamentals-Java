@@ -1,8 +1,6 @@
-package MethodsLab;
-
 import java.util.Scanner;
 
-public class PrintingTriangle {
+public class Printing_Triangle_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -26,7 +24,6 @@ public class PrintingTriangle {
         for (int  i = height; i >= 1; i--) {
             printSingeLine(i);
         }
-
     }
 
     private static void printSingeLine(int length) {
@@ -34,6 +31,6 @@ public class PrintingTriangle {
             System.out.print(i + " ");
         }
         System.out.println();
-
     }
+    
 }
