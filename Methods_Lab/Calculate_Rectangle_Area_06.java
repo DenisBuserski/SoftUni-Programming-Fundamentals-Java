@@ -1,8 +1,6 @@
-package MethodsLab;
-
 import java.util.Scanner;
 
-public class CalculateRectangleArea {
+public class Calculate_Rectangle_Area_06 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
