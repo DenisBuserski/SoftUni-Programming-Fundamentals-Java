@@ -1,8 +1,6 @@
-package MethodsLab;
+import java.util.Scanner;
 
-        import java.util.Scanner;
-
-public class MathOperations {
+public class Math_Operations_11 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -12,6 +10,7 @@ public class MathOperations {
 
         result(number1, command, number2);
     }
+        
     private static void result(double number1, String command, double number2) {
         double result = 0;
 
@@ -31,6 +30,5 @@ public class MathOperations {
         }
         System.out.printf("%.0f", result);
     }
+        
 }
-
-
