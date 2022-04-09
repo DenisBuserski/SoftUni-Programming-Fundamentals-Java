@@ -1,8 +1,6 @@
-package MethodsLab;
-
 import java.util.Scanner;
 
-public class GreaterOfTwoValues {
+public class Greater_Of_Two_Values_09 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -32,6 +30,7 @@ public class GreaterOfTwoValues {
             System.out.println(number2);
         }
     }
+    
     private static void getMaxString(String type, String value1, String value2) {
         if (value1.compareTo(value2) >= 0) {
             System.out.println(value1);
@@ -39,6 +38,7 @@ public class GreaterOfTwoValues {
             System.out.println(value2);
         }
     }
+    
     private static void getMaxChar(String type, String value1, String value2) {
         int charValue1 = value1.charAt(0);
         int charValue2 = value2.charAt(0);
@@ -49,6 +49,5 @@ public class GreaterOfTwoValues {
             System.out.println(value2);
         }
     }
-
 
 }
