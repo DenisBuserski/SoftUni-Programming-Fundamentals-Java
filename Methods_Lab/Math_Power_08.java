@@ -1,9 +1,7 @@
-package MethodsLab;
-
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class MathPower {
+public class Math_Power_08 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -18,6 +16,5 @@ public class MathPower {
         result = Math.pow(number, power);
         return result;
     }
-
 
 }
