@@ -1,8 +1,6 @@
-package MethodsLab;
-
 import java.util.Scanner;
 
-public class RepeatString {
+public class Repeat_String_07 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -20,4 +18,5 @@ public class RepeatString {
         }
         return result;
     }
+    
 }
