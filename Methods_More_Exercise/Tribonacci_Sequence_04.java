@@ -1,8 +1,6 @@
-package MethodsMoreExercise;
-
 import java.util.Scanner;
 
-public class TribonacciSequence {
+public class Tribonacci_Sequence_04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -21,7 +19,6 @@ public class TribonacciSequence {
         } else if (index == 0) {
             System.out.println(0);
         } else {
-
             for (int i = 0; i <= index; i++) {
                 if (i <= 3) {
                     sequenceArray[0] = 1;
@@ -31,11 +28,12 @@ public class TribonacciSequence {
                     sequenceArray[i - 1] = sequenceArray[i - 2] + sequenceArray[i - 3] + sequenceArray[i - 4];
                 }
             }
+            
             for (int j = 0; j <= sequenceArray.length - 1; j++) {
                 int number = sequenceArray[j];
                 System.out.print(number + " ");
             }
-
         }
     }
+    
 }
