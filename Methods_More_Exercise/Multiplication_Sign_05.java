@@ -1,8 +1,6 @@
-package MethodsMoreExercise;
-
 import java.util.Scanner;
 
-public class MultiplicationSign {
+public class Multiplication_Sign_05 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -14,7 +12,6 @@ public class MultiplicationSign {
     }
 
     private static void result(int num1, int num2, int num3) {
-
         if (num1 == 0 || num2 == 0 || num3 == 0) {
             System.out.println("zero");
         } else if (num1 > 0 && num2 > 0 && num3 > 0 ||
@@ -26,6 +23,5 @@ public class MultiplicationSign {
             System.out.println("negative");
         }
     }
-
 
 }
