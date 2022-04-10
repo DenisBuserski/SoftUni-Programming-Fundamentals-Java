@@ -1,10 +1,10 @@
-package MethodsMoreExercise;
-
 import java.util.Scanner;
 
-public class LongerLine {
+public class Longer_Line_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        
+        
         int x1 = Integer.parseInt(scanner.nextLine());
         int y1 = Integer.parseInt(scanner.nextLine());
         int x2 = Integer.parseInt(scanner.nextLine());
@@ -36,6 +36,6 @@ public class LongerLine {
         } else {
             System.out.printf("(%d, %d)(%d, %d)", x2, y2, x1, y1);
         }
-
     }
+    
 }
