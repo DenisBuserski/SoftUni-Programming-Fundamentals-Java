@@ -1,8 +1,6 @@
-package MethodsMoreExercise;
-
 import java.util.Scanner;
 
-public class DataTypes {
+public class Data_Types_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -35,4 +33,5 @@ public class DataTypes {
     private static void integerType(int number) {
         System.out.println(number * 2);
     }
+    
 }
