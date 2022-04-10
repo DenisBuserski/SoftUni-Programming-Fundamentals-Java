@@ -1,8 +1,6 @@
-package MethodsMoreExercise;
-
 import java.util.Scanner;
 
-public class CenterPoint {
+public class Center_Point_02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -26,4 +24,5 @@ public class CenterPoint {
     private static int first(int x1, int y1) {
         return Math.abs(x1 * y1);
     }
+    
 }
