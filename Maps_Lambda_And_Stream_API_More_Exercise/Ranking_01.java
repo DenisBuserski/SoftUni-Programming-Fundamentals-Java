@@ -1,8 +1,6 @@
-package MapsLambdaAndStreamAPIMoreExercise;
-
 import java.util.*;
 
-public class Ranking {
+public class Ranking_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -21,7 +19,7 @@ public class Ranking {
 
         while (!input.equals("end of submissions")) {
             String[] submission = input.split("=>");
-            //for easier nav
+            
             String contestName = submission[0],
                     contestPass = submission[1],
                     userName = submission[2];
@@ -53,7 +51,6 @@ public class Ranking {
         for (Map.Entry<String, HashMap<String, Integer>> X : contestantMap.entrySet()) {
             HashMap<String, Integer> temp = X.getValue();
             userScore += temp.values().stream().mapToInt(integer -> integer).sum();
-
             if (userScore >= bestUserScore) {
                 bestUserScore = userScore;
                 bestUser = X.getKey();
@@ -67,15 +64,11 @@ public class Ranking {
         contestantMap.entrySet().stream()
                 .forEach(e -> {
                     System.out.printf("%s%n" , e.getKey());
-                    e.getValue().entrySet().stream()
+                    e.getValue().entrySet()
+                            .stream()
                             .sorted(Comparator.comparingInt(k -> -k.getValue()))
                             .forEach(k -> System.out.printf("#  %s -> %d%n", k.getKey(), k.getValue()));
                 });
-
-
-
-
-
-
     }
+    
 }
