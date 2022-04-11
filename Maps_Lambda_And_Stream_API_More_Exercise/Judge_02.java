@@ -1,11 +1,9 @@
-package MapsLambdaAndStreamAPIMoreExercise;
-
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class Judge {
+public class Judge_02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -59,7 +57,5 @@ public class Judge {
         results.entrySet().stream().sorted(Map.Entry.<String, Integer>comparingByValue().reversed()
                 .thenComparing(Map.Entry.comparingByKey()))
                 .forEach(e -> System.out.printf("%d. %s -> %d%n", num.incrementAndGet(), e.getKey(), e.getValue()));
-
-
     }
 }
