@@ -1,11 +1,9 @@
-package ProgrammingFundamentalsMidExamRetake03;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class MovingTarget {
+public class Moving_Target_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -50,6 +48,7 @@ public class MovingTarget {
             }
             input = scanner.nextLine();
         }
+        
         for (int index = 0; index <= targetsList.size() - 1; index++) {
             if (index != targetsList.size() - 1) {
                 System.out.print(targetsList.get(index) + "|");
@@ -58,7 +57,6 @@ public class MovingTarget {
 
             }
         }
-
 
     }
 }
