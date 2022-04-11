@@ -29,6 +29,7 @@ public class Moving_Target_03 {
                 case "Add":
                     int indexToAdd = Integer.parseInt(inputArray[1]);
                     int value = Integer.parseInt(inputArray[2]);
+                    
                     if (indexToAdd < targetsList.size() && indexToAdd >= 0) {
                         targetsList.add(indexToAdd, value);
                     } else {
