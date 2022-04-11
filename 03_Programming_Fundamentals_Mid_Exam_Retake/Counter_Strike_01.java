@@ -1,8 +1,6 @@
-package ProgrammingFundamentalsMidExamRetake03;
-
 import java.util.Scanner;
 
-public class CounterStrike {
+public class Counter_Strike_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -25,14 +23,12 @@ public class CounterStrike {
                 break;
             }
 
-
             stringDistance = scanner.nextLine();
         }
 
         if (stringDistance.equals("End of battle")) {
             System.out.printf("Won battles: %d. Energy left: %d", winsCount, initialEnergy);
         }
-
 
     }
 }
