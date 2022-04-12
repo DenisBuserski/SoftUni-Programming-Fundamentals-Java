@@ -1,11 +1,9 @@
-package MapsLambdaAndStreamAPIMoreExercise;
-
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
 
-public class DragonArmy {
+public class Dragon_Army_05 {
     private static final int DEFAULT_DMG = 45;
     private static final int DEFAULT_HEALTH = 250;
     private static final int DEFAULT_ARMOR = 10;
@@ -67,5 +65,5 @@ public class DragonArmy {
                 totalArmor / totalEntries
         };
     }
+    
 }
-
