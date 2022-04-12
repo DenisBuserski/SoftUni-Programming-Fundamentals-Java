@@ -1,12 +1,9 @@
-package MapsLambdaAndStreamAPIMoreExercise;
-
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class MOBAChallenger {
+public class MOBA_Challenger_03 {
     public static void main(String[] args) {
-
 
         Scanner scan = new Scanner(System.in);
         Map<String, LinkedHashMap<String, Integer>> players = new LinkedHashMap<>();
@@ -44,6 +41,7 @@ public class MOBAChallenger {
                             }
                         }
                     }
+                    
                     if (hasCommon) {
                         if (players.get(player1).values().stream().mapToInt(i -> i).sum() >
                                 players.get(player2).values().stream().mapToInt(i -> i).sum()) {
@@ -53,13 +51,13 @@ public class MOBAChallenger {
                             players.remove(player1);
                         }
                     }
-
                 }
 
             }
 
             command = scan.nextLine();
         }
+        
         players.entrySet()
                 .stream()
                 .sorted((p1, p2) -> {
