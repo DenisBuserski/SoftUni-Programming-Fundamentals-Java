@@ -1,10 +1,8 @@
-package MapsLambdaAndStreamAPIMoreExercise;
-
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class Snowwhite {
+public class Snowwhite_04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -14,7 +12,6 @@ public class Snowwhite {
         while (!"Once upon a time".equals(input = scanner.nextLine())) {
 
             String[] lineInput = input.split(" <:> ");
-
             String name = lineInput[0];
             String hatColor = lineInput[1];
             int physics = Integer.parseInt(lineInput[2]);
@@ -35,6 +32,7 @@ public class Snowwhite {
                 print.put(entry.getKey() + " " + subEntry.getKey() + " " + entry.getValue().size(), subEntry.getValue());
             }
         }
+        
         print.entrySet().stream().sorted((pair2, pair1) -> {
             int sort = Integer.compare(pair1.getValue(), pair2.getValue());
             if (sort == 0) {
@@ -47,5 +45,6 @@ public class Snowwhite {
             String[] printing = pair.getKey().split(" ");
             System.out.printf("(%s) %s <-> %d\n", printing[0], printing[1], pair.getValue());
         });
+        
     }
 }
