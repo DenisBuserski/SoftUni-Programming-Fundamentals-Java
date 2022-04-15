@@ -1,8 +1,6 @@
-package DataTypesAndVariablesExercise;
-
 import java.util.Scanner;
 
-public class Elevator {
+public class Elevator_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -11,14 +9,13 @@ public class Elevator {
 
         if (peopleNum <= elevatorCapacity) {
             System.out.println(1);
-        }
-        else if (peopleNum % elevatorCapacity == 0) {
+        } else if (peopleNum % elevatorCapacity == 0) {
             int a = peopleNum / elevatorCapacity;
             System.out.println(a);
-        }
-        else if (peopleNum % elevatorCapacity != 0) {
+        } else if (peopleNum % elevatorCapacity != 0) {
             int b = peopleNum / elevatorCapacity;
             System.out.println(b + 1);
         }
+        
     }
 }
