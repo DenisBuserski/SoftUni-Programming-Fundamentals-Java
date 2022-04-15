@@ -1,8 +1,6 @@
-package DataTypesAndVariablesExercise;
-
 import java.util.Scanner;
 
-public class SumDigits {
+public class Sum_Digits_02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -15,5 +13,6 @@ public class SumDigits {
            number = number / 10;
        }
        System.out.println(digitsSum);
+        
     }
 }
