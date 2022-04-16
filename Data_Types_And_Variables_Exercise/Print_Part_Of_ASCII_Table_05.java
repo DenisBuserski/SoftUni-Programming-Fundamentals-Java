@@ -1,8 +1,6 @@
-package DataTypesAndVariablesExercise;
-
 import java.util.Scanner;
 
-public class PrintPartOfASCIITable {
+public class Print_Part_Of_ASCII_Table_05 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -10,12 +8,8 @@ public class PrintPartOfASCIITable {
         int secondChar = Integer.parseInt(scanner.nextLine());
 
         for (int i = firstChar; i <= secondChar; i++) {
-
             System.out.printf("%c ", (char) i);
-
         }
-
-
 
     }
 }
