@@ -1,8 +1,6 @@
-package DataTypesAndVariablesExercise;
-
 import java.util.Scanner;
 
-public class BeerKegs {
+public class Beer_Kegs_08 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -21,6 +19,7 @@ public class BeerKegs {
                 bestKeg = kegName;
             }
         }
+        
         System.out.println(bestKeg);
     }
 }
