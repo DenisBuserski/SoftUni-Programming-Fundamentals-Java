@@ -1,8 +1,6 @@
-package DataTypesAndVariablesExercise;
-
 import java.util.Scanner;
 
-public class TriplesOfLatinLetters {
+public class Triples_Of_Latin_Letters_06 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -10,7 +8,7 @@ public class TriplesOfLatinLetters {
 
         for (int i = 0; i < n; i++) {
             char firstChar = (char) ('a' + i);
-
+            
             for (int j = 0; j < n; j++) {
                 char secondChar = (char) ('a' + j);
 
@@ -20,7 +18,6 @@ public class TriplesOfLatinLetters {
                     System.out.printf("%c%c%c%n", firstChar, secondChar, thirdChar);
                 }
             }
-
         }
 
     }
