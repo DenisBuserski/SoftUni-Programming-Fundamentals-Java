@@ -1,8 +1,6 @@
-package DataTypesAndVariablesExercise;
-
 import java.util.Scanner;
 
-public class Snowballs {
+public class Snowballs_11 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -30,7 +28,6 @@ public class Snowballs {
                 maxQuality = snowballQuality;
             }
         }
-
 
         System.out.printf("%d : %d = %.0f (%d)", maxSnow, maxTime, maxValue, maxQuality);
     }
