@@ -1,8 +1,6 @@
-package DataTypesAndVariablesExercise;
-
 import java.util.Scanner;
 
-public class SpiceMustFlow {
+public class Spice_Must_Flow_09 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -19,8 +17,8 @@ public class SpiceMustFlow {
             }
             totalAmount -= 26;
         }
+        
         System.out.println(daysCount);
         System.out.println(totalAmount);
-
     }
 }
