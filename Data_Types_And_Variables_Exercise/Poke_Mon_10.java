@@ -1,9 +1,7 @@
-package DataTypesAndVariablesExercise;
-
 import java.math.BigDecimal;
 import java.util.Scanner;
 
-public class PokeMon {
+public class Poke_Mon_10 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -21,21 +19,11 @@ public class PokeMon {
             if (pokePower == originalPokePower / 2) {
                 if (exhaustionFactor > 0) {
                     pokePower /= exhaustionFactor;
-
                 }
             }
-
-
         }
 
         System.out.println(pokePower);
         System.out.println(targetCount);
-
-
-
-
-
-
-
     }
 }
