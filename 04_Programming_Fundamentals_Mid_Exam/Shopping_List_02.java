@@ -1,11 +1,9 @@
-package ProgrammingFundamentalsMidExam04;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class ShoppingList {
+public class Shopping_List_02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -44,9 +42,10 @@ public class ShoppingList {
                     }
                     break;
             }
+            
             input = scanner.nextLine();
         }
+        
         System.out.print(shoppingList1.toString().replaceAll("[\\[\\]]", ""));
-
     }
 }
