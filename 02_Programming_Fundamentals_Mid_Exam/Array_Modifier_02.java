@@ -1,11 +1,9 @@
-package ProgrammingFundamentalsMidExam02;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class ArrayModifier {
+public class Array_Modifier_02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -44,8 +42,7 @@ public class ArrayModifier {
 
             command = scanner.nextLine();
         }
-System.out.print(inputList.toString().replaceAll("[\\[\\]]", ""));
 
-
+        System.out.print(inputList.toString().replaceAll("[\\[\\]]", ""));
     }
 }
