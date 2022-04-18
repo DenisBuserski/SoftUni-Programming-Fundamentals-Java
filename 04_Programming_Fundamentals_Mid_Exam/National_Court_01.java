@@ -1,8 +1,6 @@
-package ProgrammingFundamentalsMidExam04;
-
 import java.util.Scanner;
 
-public class NationalCourt {
+public class National_Court_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -11,7 +9,7 @@ public class NationalCourt {
         int employee3 = Integer.parseInt(scanner.nextLine());
         int totalPeople = Integer.parseInt(scanner.nextLine());
 
-        //every 4th hour 1 hour break -> +1 hour
+        // Every 4th hour 1 hour break -> +1 hour
         int totalWorkForOneHour = employee1 + employee2 + employee3;
         int time = 0;
 
