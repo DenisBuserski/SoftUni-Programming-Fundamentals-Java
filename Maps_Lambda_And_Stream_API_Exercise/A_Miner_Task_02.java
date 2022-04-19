@@ -1,10 +1,8 @@
-package MapsLambdaAndStreamAPIExercise;
-
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class AMinerTask {
+public class A_Miner_Task_02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
