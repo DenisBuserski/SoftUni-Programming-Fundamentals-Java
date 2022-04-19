@@ -1,10 +1,8 @@
-package MapsLambdaAndStreamAPIExercise;
-
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class CountCharsInAString {
+public class Count_Chars_In_A_String_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -14,7 +12,6 @@ public class CountCharsInAString {
 
         for (int index = 0; index <= text.length() - 1; index++) {
             char currentSymbol = text.charAt(index);
-
             if (currentSymbol == ' ') {
                 continue;
             }
@@ -30,5 +27,6 @@ public class CountCharsInAString {
         for (Map.Entry<Character, Integer> entry : lettersCount.entrySet()) {
             System.out.println(entry.getKey() + " -> " + entry.getValue());
         }
+        
     }
 }
