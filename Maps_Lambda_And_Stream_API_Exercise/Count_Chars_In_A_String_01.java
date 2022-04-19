@@ -23,7 +23,6 @@ public class Count_Chars_In_A_String_01 {
             }
         }
 
-
         for (Map.Entry<Character, Integer> entry : lettersCount.entrySet()) {
             System.out.println(entry.getKey() + " -> " + entry.getValue());
         }
