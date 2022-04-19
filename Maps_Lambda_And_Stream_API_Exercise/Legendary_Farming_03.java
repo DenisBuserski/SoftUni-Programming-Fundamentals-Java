@@ -1,10 +1,8 @@
-package MapsLambdaAndStreamAPIExercise;
-
 import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
 
-public class LegendaryFarming {
+public class Legendary_Farming_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -26,31 +24,18 @@ public class LegendaryFarming {
                 int valueItem = Integer.parseInt(input[i]);
                 String item = input[i + 1];
                 i++;
+                
                 if (item.equals("shards") || item.equals("fragments") || item.equals("motes")) {
-                    /*if (!items.containsKey(item)) {
-                        items.put(item, valueItem);
-                    } else {*/
                     int oldValueOfItem = items.get(item);
                     items.put(item, oldValueOfItem + valueItem);
-
+                    
                     if (items.get(item) >= 250) {
                         winner = item;
                         int lastValue = items.get(item);
                         items.put(item, lastValue - 250);
                         break loop;
                     }
-                }
-//                        } else {
-//                            int oldValueOfItem = items.get(item);
-//                            items.put(item, oldValueOfItem + valueItem);
-//                            if (items.get(item) >= 250) {
-//                                winner = item;
-//                                int lastValue = items.get(item);
-//                                items.put(item, lastValue -
-//                                250);
-//                                break;
-//                            }
-                else {
+                } else {
                     if (!trash.containsKey(item)) {
                         trash.put(item, valueItem);
                     } else {
@@ -59,6 +44,7 @@ public class LegendaryFarming {
                     }
                 }
             }
+            
             input = scanner.nextLine().toLowerCase().split(" ");
         }
 
@@ -75,21 +61,16 @@ public class LegendaryFarming {
                 break;
         }
 
-        items.entrySet().
+        items
+            .entrySet()
+            .stream()
+            .sorted((e1, e2) -> e2.getValue().compareTo(e1.getValue()))
+            .forEach(e -> System.out.println(e.getKey() + ": " + e.getValue()));
 
-                stream().
-
-                sorted((e1, e2) -> e2.getValue().
-
-                        compareTo(e1.getValue())).
-
-                forEach(e -> System.out.println(e.getKey() + ": " + e.getValue()));
-
-        trash.entrySet().
-
-                stream().
-
-                forEach(e -> System.out.println(e.getKey() + ": " + e.getValue()));
+        trash
+            .entrySet()
+            .stream()
+            .forEach(e -> System.out.println(e.getKey() + ": " + e.getValue()));
 
     }
 }
