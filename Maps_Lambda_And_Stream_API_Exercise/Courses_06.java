@@ -1,8 +1,6 @@
-package MapsLambdaAndStreamAPIExercise;
-
 import java.util.*;
 
-public class Courses {
+public class Courses_06 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -31,8 +29,6 @@ public class Courses {
                             .sorted(String::compareTo)
                             .forEach(student -> System.out.println("-- " + student));
                 });
-
-
 
     }
 }
