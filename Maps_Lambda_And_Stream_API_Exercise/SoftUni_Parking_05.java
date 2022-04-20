@@ -1,10 +1,8 @@
-package MapsLambdaAndStreamAPIExercise;
-
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class SoftUniParking {
+public class SoftUni_Parking_05 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -41,11 +39,6 @@ public class SoftUniParking {
             String licensePlateNumber = entry.getValue();
             System.out.printf("%s => %s%n", name, licensePlateNumber);
         }
-
-
-
-
-
 
     }
 }
