@@ -1,8 +1,6 @@
-package MapsLambdaAndStreamAPIExercise;
-
 import java.util.*;
 
-public class StudentAcademy {
+public class Student_Academy_07 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
