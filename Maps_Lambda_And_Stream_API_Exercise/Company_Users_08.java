@@ -1,8 +1,6 @@
-package MapsLambdaAndStreamAPIExercise;
-
 import java.util.*;
 
-public class CompanyUsers {
+public class Company_Users_08 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -17,8 +15,7 @@ public class CompanyUsers {
             if (!companies.containsKey(company)) {
                 companies.put(company, new ArrayList<>());
                 companies.get(company).add(employeeId);
-            }
-            else {
+            } else {
                 if (!companies.get(company).contains(employeeId)) {
                     companies.get(company).add(employeeId);
                 }
