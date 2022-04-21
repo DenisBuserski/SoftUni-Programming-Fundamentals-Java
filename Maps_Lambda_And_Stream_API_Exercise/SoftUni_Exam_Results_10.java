@@ -1,10 +1,8 @@
-package MapsLambdaAndStreamAPIExercise;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class SoftUniExamResults {
+public class SoftUni_Exam_Results_10 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -24,7 +22,6 @@ public class SoftUniExamResults {
                     userPoints.put(username, points);
                 } else {
                     int currentPoints = userPoints.get(username);
-
                     if (points > currentPoints) {
                         userPoints.put(username, points);
                     }
@@ -35,10 +32,10 @@ public class SoftUniExamResults {
                 } else {
                     languageCount.put(language, languageCount.get(language) + 1);
                 }
-
             } else {
                 userPoints.remove(username);
             }
+            
             input = scanner.nextLine();
         }
 
@@ -53,6 +50,5 @@ public class SoftUniExamResults {
                 .sorted(Map.Entry.<String, Integer>comparingByValue().reversed()
                         .thenComparing(Map.Entry.comparingByKey()))
                 .forEach(e -> System.out.println(e.getKey() + " - " + e.getValue()));
-
     }
 }
