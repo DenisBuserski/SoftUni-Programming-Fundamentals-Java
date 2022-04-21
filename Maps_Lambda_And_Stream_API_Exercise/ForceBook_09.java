@@ -1,8 +1,6 @@
-package MapsLambdaAndStreamAPIExercise;
-
 import java.util.*;
 
-public class ForceBook {
+public class ForceBook_09 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -26,11 +24,9 @@ public class ForceBook {
                 case "|":
                     String side = command[0];
                     String name = command[1];
-
                     boolean check = false;
 
                     for (Map.Entry<String, List<String>> current : webSide.entrySet()) {
-
                         if (current.getValue().contains(name)) {
                             check = true;
                             break;
@@ -64,11 +60,9 @@ public class ForceBook {
                         System.out.printf("%s joins the %s side!%n", user, whichSide);
                     }
                     break;
-
                 default:
                     break;
             }
-
 
             line = scanner.nextLine();
         }
@@ -83,8 +77,7 @@ public class ForceBook {
                             .stream()
                             .sorted(String::compareTo)
                             .forEach(person -> System.out.printf("! %s%n", person));
-
-
                 });
+        
     }
 }
