@@ -1,8 +1,6 @@
-package ProgrammingFundamentalsFinalExamRetake01;
-
 import java.util.Scanner;
 
-public class TheImitationGame {
+public class The_Imitation_Game_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -27,7 +25,6 @@ public class TheImitationGame {
                 case "Insert":
                     int index = Integer.parseInt(commandArray[1]);
                     String value = commandArray[2];
-
                     StringBuilder encryptedMessage1 = new StringBuilder(encryptedMessage);
                     encryptedMessage1.insert(index, value);
                     encryptedMessage = encryptedMessage1.toString();
@@ -38,8 +35,10 @@ public class TheImitationGame {
                     encryptedMessage = encryptedMessage.replace(substring, replacement);
                     break;
             }
+            
             command = scanner.nextLine();
         }
+        
         System.out.printf("The decrypted message is: %s", encryptedMessage);
     }
 }
