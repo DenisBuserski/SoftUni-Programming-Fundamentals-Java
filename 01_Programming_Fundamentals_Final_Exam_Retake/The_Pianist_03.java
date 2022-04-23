@@ -1,8 +1,6 @@
-package ProgrammingFundamentalsFinalExamRetake01;
-
 import java.util.*;
 
-public class ThePianist {
+public class The_Pianist_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -39,7 +37,6 @@ public class ThePianist {
                     }
                     break;
                 case "Remove":
-
                     if (pieces.containsKey(piece)) {
                         pieces.remove(piece);
                         System.out.printf("Successfully removed %s!%n", piece);
@@ -58,12 +55,12 @@ public class ThePianist {
                     }
                     break;
             }
+            
             command = scanner.nextLine();
         }
 
         pieces.entrySet().stream()
                 .sorted(Map.Entry.comparingByKey())
-                .forEach(kvp -> System.out.printf("%s -> Composer: %s, Key: %s%n",
-                        kvp.getKey(), kvp.getValue().get(0), kvp.getValue().get(1)));
+                .forEach(kvp -> System.out.printf("%s -> Composer: %s, Key: %s%n", kvp.getKey(), kvp.getValue().get(0), kvp.getValue().get(1)));
     }
 }
