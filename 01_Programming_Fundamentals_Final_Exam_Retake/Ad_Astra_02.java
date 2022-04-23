@@ -1,10 +1,8 @@
-package ProgrammingFundamentalsFinalExamRetake01;
-
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class AdAstra {
+public class Ad_Astra_02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -25,7 +23,6 @@ public class AdAstra {
         while (matcher2.find()) {
             System.out.printf("Item: %s, Best before: %s, Nutrition: %s%n", matcher2.group("item"), matcher2.group("date"), matcher2.group("calories"));
         }
-
 
     }
 }
