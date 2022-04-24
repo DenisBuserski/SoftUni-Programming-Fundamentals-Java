@@ -1,8 +1,6 @@
-package BasicSyntaxConditionalStatementsAndLoopsExercise;
-
 import java.util.Scanner;
 
-public class Vacation {
+public class Vacation_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -41,6 +39,7 @@ public class Vacation {
                 }
                 break;
         }
+        
         double totalPrice = price * people;
 
         if (peopleType.equals("Students") && people >= 30) {
