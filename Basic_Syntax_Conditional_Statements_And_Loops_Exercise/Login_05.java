@@ -1,8 +1,6 @@
-package BasicSyntaxConditionalStatementsAndLoopsExercise;
-
 import java.util.Scanner;
 
-public class Login {
+public class Login_05 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -14,7 +12,6 @@ public class Login {
         while (!username.equals(password)) {
             password = scanner.nextLine();
             tries++;
-
 
             for (int i = password.length() - 1; i >= 0; i--) {
                 reversePassword = reversePassword + password.charAt(i);
@@ -38,6 +35,6 @@ public class Login {
                 reversePassword = "";
             }
         }
+        
     }
 }
-
