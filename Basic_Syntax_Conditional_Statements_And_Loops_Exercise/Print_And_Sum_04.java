@@ -1,8 +1,6 @@
-package BasicSyntaxConditionalStatementsAndLoopsExercise;
-
 import java.util.Scanner;
 
-public class PrintAndSum {
+public class Print_And_Sum_04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -14,8 +12,8 @@ public class PrintAndSum {
             sum += i;
             System.out.printf("%d ", i);
         }
+        
         System.out.println("");
         System.out.printf("Sum: %d", sum);
-
     }
 }
