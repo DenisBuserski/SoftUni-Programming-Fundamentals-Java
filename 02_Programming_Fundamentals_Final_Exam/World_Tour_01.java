@@ -1,8 +1,6 @@
-package ProgrammingFundamentalsFinalExam02;
-
 import java.util.Scanner;
 
-public class WorldTour {
+public class World_Tour_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -12,12 +10,10 @@ public class WorldTour {
         String command = scanner.nextLine();
         while (!command.equals("Travel")) {
             String [] commandArray = command.split("\\:");
-
             switch (commandArray[0]) {
                 case "Add Stop":
                     int addIndex = Integer.parseInt(commandArray[1]);
                     String addStop = commandArray[2];
-
                     if (addIndex >= 0 && addIndex < stopsNew.length()) {
                         stopsNew.insert(addIndex, addStop);
                     }
@@ -26,7 +22,6 @@ public class WorldTour {
                 case "Remove Stop":
                     int startIndex = Integer.parseInt(commandArray[1]);
                     int endIndex = Integer.parseInt(commandArray[2]);
-
                     if (startIndex >= 0 && endIndex < stopsNew.length()) {
                         stopsNew.delete(startIndex, endIndex + 1);
                     }
@@ -35,7 +30,6 @@ public class WorldTour {
                 case "Switch":
                     String oldString = commandArray[1];
                     String newString = commandArray[2];
-
                     if (stopsNew.toString().contains(oldString)) {
                         String switched = stopsNew.toString().replace(oldString, newString);
                         stopsNew.replace(0, stopsNew.length(), switched);
@@ -48,7 +42,5 @@ public class WorldTour {
         }
 
         System.out.printf("Ready for world tour! Planned stops: %s%n", stopsNew.toString());
-
-
     }
 }
