@@ -1,8 +1,6 @@
-package BasicSyntaxConditionalStatementsAndLoopsExercise;
-
 import java.util.Scanner;
 
-public class RageExpenses {
+public class Rage_Expenses_11 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -16,8 +14,8 @@ public class RageExpenses {
         int mouse = 0;
         int keyboard = 0;
         int display = 0;
+        
         for (int i = 1; i <= lostGamesCount; i++) {
-
             if (i % 2 == 0) {
                 headset++;
             }
