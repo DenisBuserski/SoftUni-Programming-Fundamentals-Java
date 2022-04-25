@@ -1,8 +1,6 @@
-package BasicSyntaxConditionalStatementsAndLoopsExercise;
-
 import java.util.Scanner;
 
-public class PadawanEquipment {
+public class Padawan_Equipment_10 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -24,7 +22,6 @@ public class PadawanEquipment {
         } else if (money < totalPrice) {
             System.out.printf("Ivan Cho will need %.2flv more.", totalPrice - money);
         }
-
 
     }
 }
