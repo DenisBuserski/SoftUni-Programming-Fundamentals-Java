@@ -1,8 +1,6 @@
-package ProgrammingFundamentalsFinalExam02;
-
 import java.util.*;
 
-public class PlantDiscovery {
+public class Plant_Discovery_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -13,7 +11,6 @@ public class PlantDiscovery {
 
         while (number-- > 0) {
             String[] input = scanner.nextLine().split("<->");
-
             String plant = input[0];
             int rarity = Integer.parseInt(input[1]);
 
@@ -22,7 +19,6 @@ public class PlantDiscovery {
         }
 
         String input;
-
         while (!"Exhibition".equals(input = scanner.nextLine())) {
             String[] tokens = input.split(": ");
             String command = tokens[0];
@@ -40,18 +36,15 @@ public class PlantDiscovery {
                     ratings.get(name).add(rating);
                     break;
                 }
-
                 case "Update": {
                     int updatedRarity = Integer.parseInt(data[1]);
                     plants.put(name, updatedRarity);
                     break;
                 }
-
                 case "Reset": {
                     ratings.get(name).clear();
                     break;
                 }
-
                 default:
                     System.out.println("error");
             }
@@ -59,16 +52,19 @@ public class PlantDiscovery {
 
         System.out.println("Plants for the exhibition:");
 
-        plants.entrySet().stream().sorted(Map.Entry.<String, Integer>comparingByValue()
-                .thenComparingDouble(x -> ratings.get(x.getKey()).stream()
-                        .mapToDouble(Double::doubleValue)
-                        .average().orElse(0.0))
-                .reversed())
-                .forEach(entry -> System.out.println(String.format("- %s; Rarity: %d; Rating: %.2f",
-                        entry.getKey(), entry.getValue(),
-                        ratings.get(entry.getKey()).stream()
-                                .mapToDouble(Double::doubleValue)
-                                .average().orElse(0.0))));
+        plants
+            .entrySet()
+            .stream()
+            .sorted(Map.Entry.<String, Integer>comparingByValue().thenComparingDouble(x -> ratings.get(x.getKey())
+                                                                                      .stream()
+                                                                                      .mapToDouble(Double::doubleValue)
+                                                                                      .average()
+                                                                                      .orElse(0.0))
+            .reversed())
+            .forEach(entry -> System.out.println(String.format("- %s; Rarity: %d; Rating: %.2f",
+                        entry.getKey(), 
+                        entry.getValue(),
+                        ratings.get(entry.getKey()).stream().mapToDouble(Double::doubleValue).average().orElse(0.0))));
 
     }
 }
