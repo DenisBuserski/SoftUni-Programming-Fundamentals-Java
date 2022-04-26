@@ -1,14 +1,12 @@
-package ProgrammingFundamentalsFinalExam05;
-
 import java.util.*;
 
-public class Pirates {
+public class Pirates_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         String userInput = scanner.nextLine();
-        //City
-        //List<City>
+        // City
+        // List<City>
         Map<String, List<Integer>> cities = new LinkedHashMap<>();
 
         while (!userInput.equals("Sail")) {
@@ -26,6 +24,7 @@ public class Pirates {
             } else {
                 cities.put(cityName, Arrays.asList(population, gold));
             }
+            
             userInput = scanner.nextLine();
         }
 
@@ -35,19 +34,14 @@ public class Pirates {
             String[] commandParts = userInput.split("=>");
             String commandName = commandParts[0];
             String cityName = commandParts[1];
-
             switch (commandName) {
                 case "Plunder":
                     int peopleKilled = Integer.parseInt(commandParts[2]);
                     int goldStolen = Integer.parseInt(commandParts[3]);
-
-
                     int peopleBeforePlunder = cities.get(cityName).get(0);
                     int goldBeforePlunder = cities.get(cityName).get(1);
-
                     int remainingPeople = peopleBeforePlunder - peopleKilled;
                     int remainingGold = goldBeforePlunder - goldStolen;
-
 
                     if (remainingGold <= 0 || remainingPeople <= 0) {
                         if (remainingGold <= 0) {
@@ -77,20 +71,26 @@ public class Pirates {
                     System.out.printf("%d gold added to the city treasury. %s now has %d gold.%n", goldProsper, cityName, goldAfterProsper);
                     break;
             }
+            
             userInput = scanner.nextLine();
         }
 
         System.out.printf("Ahoy, Captain! There are %d wealthy settlements to go to:%n", cities.size());
 
-        cities.entrySet().stream().sorted((left, right) -> {
-            int result = right.getValue().get(1).compareTo(left.getValue().get(1));
-            if(result == 0){
-                result = left.getKey().compareTo(right.getKey());
-            }
-            return result;
-        }).forEach(entry -> System.out.printf("%s -> Population: %d citizens, Gold: %d kg%n", entry.getKey(), entry.getValue().get(0), entry.getValue().get(1)));
-
-
-
+        cities
+            .entrySet()
+            .stream()
+            .sorted((left, right) -> {
+                int result = right.getValue().get(1).compareTo(left.getValue().get(1));
+                if(result == 0){
+                    result = left.getKey().compareTo(right.getKey());
+                }
+                return result;
+            })
+            .forEach(entry -> System.out.printf("%s -> Population: %d citizens, Gold: %d kg%n", 
+                                                entry.getKey(), 
+                                                entry.getValue().get(0), 
+                                                entry.getValue().get(1)));
+        
     }
 }
