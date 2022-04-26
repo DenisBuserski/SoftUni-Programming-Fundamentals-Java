@@ -1,12 +1,10 @@
-package ProgrammingFundamentalsFinalExamRetake03;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class MirrorWords {
+public class Mirror_Words_02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -56,5 +54,6 @@ public class MirrorWords {
             System.out.printf("The mirror words are:%n");
             System.out.print(mirrorWords.toString().replaceAll("[\\[\\],]", "").replaceAll("\\s@", ","));
         }
+        
     }
 }
