@@ -85,7 +85,7 @@ public class Need_For_Speed_III_03 {
             .forEach(entry -> System.out.printf("%s -> Mileage: %d kms, Fuel in the tank: %d lt.%n", 
                                                 entry.getKey(), 
                                                 entry.getValue().get(0), 
-                                                \entry.getValue().get(1)));
+                                                entry.getValue().get(1)));
 
     }
 }
