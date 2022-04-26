@@ -1,17 +1,14 @@
-package ProgrammingFundamentalsFinalExam05;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class EmojiDetector {
+public class Emoji_Detector_02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         String input = scanner.nextLine();
-
         String numberRegex = "\\d";
         String emojiRegex = "(?<separator>[\\\\*:])\\1(?<emoji>[A-Z][a-z]{2,})\\1\\1";
 
