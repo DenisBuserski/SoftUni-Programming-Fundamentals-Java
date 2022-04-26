@@ -1,8 +1,6 @@
-package ProgrammingFundamentalsFinalExam05;
-
 import java.util.Scanner;
 
-public class ActivationKeys {
+public class Activation_Keys_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -51,9 +49,9 @@ public class ActivationKeys {
                     break;
             }
 
-
             input = scanner.nextLine();
         }
+        
         System.out.printf("Your activation key is: %s%n", startKey);
     }
 }
