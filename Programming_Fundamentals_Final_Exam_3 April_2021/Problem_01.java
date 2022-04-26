@@ -1,13 +1,10 @@
-package ProgrammingFundamentalsFinalExam3April2021;
-
 import java.util.Scanner;
 
-public class Problem01 {
+public class Problem_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         String input = scanner.nextLine();
-
         String command = scanner.nextLine();
 
         while (!command.equals("End")) {
@@ -18,7 +15,6 @@ public class Problem01 {
                 case "Translate":
                     String substitute = commandArray[1];
                     String replacement = commandArray[2];
-
                     if (input.contains(substitute)) {
                         input = input.replace(substitute, replacement);
                     }
@@ -61,5 +57,6 @@ public class Problem01 {
 
             command = scanner.nextLine();
         }
+        
     }
 }
