@@ -1,8 +1,6 @@
-package ProgrammingFundamentalsFinalExamRetake03;
-
 import java.util.*;
 
-public class NeedForSpeedIII {
+public class Need_For_Speed_III_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -21,7 +19,6 @@ public class NeedForSpeedIII {
         }
 
         String command = scanner.nextLine();
-
         while (!command.equals("Stop")) {
             String [] commandArray = command.split(" : ");
             String commandName = commandArray[0];
@@ -71,16 +68,24 @@ public class NeedForSpeedIII {
                     }
                     break;
             }
+            
             command = scanner.nextLine();
         }
 
-        cars.entrySet().stream().sorted((a, b) -> {
-            int result = b.getValue().get(0).compareTo(a.getValue().get(0));
-            if (result == 0) {
-                result = a.getKey().compareTo(b.getKey());
-            }
-            return result;
-        }).forEach(entry -> System.out.printf("%s -> Mileage: %d kms, Fuel in the tank: %d lt.%n", entry.getKey(), entry.getValue().get(0), entry.getValue().get(1)));
+        cars
+            .entrySet()
+            .stream()
+            .sorted((a, b) -> {
+                int result = b.getValue().get(0).compareTo(a.getValue().get(0));
+                if (result == 0) {
+                    result = a.getKey().compareTo(b.getKey());
+                }
+                return result;
+            })
+            .forEach(entry -> System.out.printf("%s -> Mileage: %d kms, Fuel in the tank: %d lt.%n", 
+                                                entry.getKey(), 
+                                                entry.getValue().get(0), 
+                                                \entry.getValue().get(1)));
 
     }
 }
