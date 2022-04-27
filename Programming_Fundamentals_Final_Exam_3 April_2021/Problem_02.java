@@ -1,18 +1,15 @@
-package ProgrammingFundamentalsFinalExam3April2021;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Problem02 {
+public class Problem_02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         int numberOfInputs = Integer.parseInt(scanner.nextLine());
 
-        //List<String> validMatches = new ArrayList<>();
         List<String> matches = new ArrayList<>();
 
         for (int i = 1; i <= numberOfInputs; i++) {
@@ -30,12 +27,8 @@ public class Problem02 {
 
             if (validMatcher.find()) {
                 String validInput = validMatcher.group();
-
-
                 if (secondPartArray.length < 2) {
-
                     if (validInput.equals(firstPartArray[firstPartArray.length - 1])) {
-
                         if (!matches.contains(validInput)) {
                             matches.add(validInput);
 
@@ -63,9 +56,9 @@ public class Problem02 {
                     System.out.printf("Valid message not found!%n");
                 }
             } else {
-
                 System.out.printf("Valid message not found!%n");
             }
         }
+        
     }
 }
