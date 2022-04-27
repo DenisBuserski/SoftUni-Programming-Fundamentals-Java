@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class 02_Treasure_Hunt {
+public class Treasure_Hunt_02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String treasureChestContent = scanner.nextLine();
