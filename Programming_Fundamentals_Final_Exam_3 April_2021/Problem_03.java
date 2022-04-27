@@ -1,13 +1,10 @@
-package ProgrammingFundamentalsFinalExam3April2021;
-
 import java.util.*;
 
-public class Problem03 {
+public class Problem_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         int capacityPerUser = Integer.parseInt(scanner.nextLine());
-
         String input = scanner.nextLine();
 
         Map<String, List<Integer>> userData = new HashMap<>();
@@ -15,7 +12,6 @@ public class Problem03 {
         while (!input.equals("Statistics")) {
             String[] inputArray = input.split("=");
             String commandName = inputArray[0];
-
             switch (commandName) {
                 case "Add":
                     String username = inputArray[1];
@@ -55,7 +51,6 @@ public class Problem03 {
                     break;
                 case "Empty":
                     String usernameEmpty = inputArray[1];
-
                     if (userData.containsKey(usernameEmpty)) {
                         userData.remove(usernameEmpty);
                     } else if (usernameEmpty.equals("All")) {
@@ -63,23 +58,27 @@ public class Problem03 {
                     }
                     break;
             }
+            
             input = scanner.nextLine();
         }
+        
         int numberOfUsers = 0;
         for (String user : userData.keySet()) {
             numberOfUsers++;
         }
         System.out.printf("Users count: %d%n", numberOfUsers);
 
-        userData.entrySet().stream().sorted((left, right) -> {
-            int result = right.getValue().get(1).compareTo(left.getValue().get(1));
-            if(result == 0){
-                result = left.getKey().compareTo(right.getKey());
-            }
-            return result;
-        }).forEach(entry -> System.out.printf("%s - %d%n", entry.getKey(), entry.getValue().get(0) + entry.getValue().get(1)));
-
-
+        userData
+            .entrySet()
+            .stream()
+            .sorted((left, right) -> {
+                int result = right.getValue().get(1).compareTo(left.getValue().get(1));
+                if(result == 0){
+                    result = left.getKey().compareTo(right.getKey());
+                }
+                return result;
+            })
+            .forEach(entry -> System.out.printf("%s - %d%n", entry.getKey(), entry.getValue().get(0) + entry.getValue().get(1)));
 
     }
 }
