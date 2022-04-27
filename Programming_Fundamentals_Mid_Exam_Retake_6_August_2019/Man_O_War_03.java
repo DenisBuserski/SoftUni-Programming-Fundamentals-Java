@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class 03_Man_O_War {
+public class Man_O_War_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
