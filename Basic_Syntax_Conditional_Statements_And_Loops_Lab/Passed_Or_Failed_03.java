@@ -1,8 +1,6 @@
-package BasicSyntaxConditionalStatementsAndLoopsLab;
-
 import java.util.Scanner;
 
-public class PassedOrFailed {
+public class Passed_Or_Failed_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -10,9 +8,9 @@ public class PassedOrFailed {
 
         if (grade >= 3.00) {
             System.out.println("Passed!");
-        }
-        else {
+        } else {
             System.out.println("Failed!");
         }
+        
     }
 }
