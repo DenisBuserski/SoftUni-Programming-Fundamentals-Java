@@ -1,5 +1,3 @@
-package BasicSyntaxConditionalStatementsAndLoopsLab;
-
 import java.util.Scanner;
 
 public class Passed {
