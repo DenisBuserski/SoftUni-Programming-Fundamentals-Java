@@ -1,8 +1,6 @@
-package BasicSyntaxConditionalStatementsAndLoopsLab;
-
 import java.util.Scanner;
 
-public class StudentInformation {
+public class Student_Information_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
