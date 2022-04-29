@@ -1,8 +1,6 @@
-package BasicSyntaxConditionalStatementsAndLoopsLab;
-
 import java.util.Scanner;
 
-public class MonthPrinter {
+public class Month_Printer_05 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -48,8 +46,6 @@ public class MonthPrinter {
             default:
                 System.out.println("Error!");
                 break;
-
-
         }
 
     }
