@@ -1,8 +1,6 @@
-package BasicSyntaxConditionalStatementsAndLoopsLab;
-
 import java.util.Scanner;
 
-public class ForeignLanguages {
+public class Foreign_Languages_06 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -21,5 +19,6 @@ public class ForeignLanguages {
             default:
                 System.out.println("unknown");
         }
+        
     }
 }
