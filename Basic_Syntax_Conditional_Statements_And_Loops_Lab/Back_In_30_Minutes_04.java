@@ -1,8 +1,6 @@
-package BasicSyntaxConditionalStatementsAndLoopsLab;
-
 import java.util.Scanner;
 
-public class BackIn30Minutes {
+public class Back_In_30_Minutes_04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -17,11 +15,6 @@ public class BackIn30Minutes {
         if (hours > 23) {
             hours = 0;
         }
-
-
-
-
-
 
         System.out.printf("%d:%02d", hours, minutes);
     }
