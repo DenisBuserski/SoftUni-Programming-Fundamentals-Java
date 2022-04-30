@@ -1,8 +1,6 @@
-package BasicSyntaxConditionalStatementsAndLoopsLab;
-
 import java.util.Scanner;
 
-public class MultiplicationTable20 {
+public class Multiplication_Table_20_11 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -14,5 +12,6 @@ public class MultiplicationTable20 {
             num2++;
         }
         while (num2 <= 10);
+        
     }
 }
