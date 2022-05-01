@@ -1,9 +1,7 @@
-package ObjectsAndClassesLab;
-
 import java.util.Random;
 import java.util.Scanner;
 
-public class RandomizeWords {
+public class Randomize_Words_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -17,8 +15,10 @@ public class RandomizeWords {
             sentence[randomIndex] = temp;
 
         }
+        
         for (String word : sentence) {
             System.out.println(word);
         }
+        
     }
 }
