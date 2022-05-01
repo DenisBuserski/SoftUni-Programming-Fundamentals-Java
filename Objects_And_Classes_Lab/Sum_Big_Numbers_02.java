@@ -1,9 +1,7 @@
-package ObjectsAndClassesLab;
-
 import java.math.BigInteger;
 import java.util.Scanner;
 
-public class SumBigNumbers {
+public class Sum_Big_Numbers_02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -12,9 +10,6 @@ public class SumBigNumbers {
 
         BigInteger result = firstNumber.add(secondNumber);
         System.out.println(result);
-
-
-
 
     }
 }
