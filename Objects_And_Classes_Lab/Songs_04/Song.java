@@ -1,4 +1,4 @@
-package ObjectsAndClassesLab.Songs;
+package Songs_04;
 
 public class Song {
     private String typeList;
@@ -41,9 +41,8 @@ public class Song {
         return name;
     }
 
-
     public Object getTypeList() {
         return typeList;
     }
+    
 }
-
