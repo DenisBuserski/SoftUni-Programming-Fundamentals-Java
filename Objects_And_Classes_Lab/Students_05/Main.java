@@ -1,4 +1,4 @@
-package ObjectsAndClassesLab.Students;
+package Students_05;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,6 @@ public class Main {
 
         while (!input.equals("end")) {
             String [] studentData = input.split(" ");
-
             String firstName = studentData[0];
             String lastName = studentData[1];
             int age = Integer.parseInt(studentData[2]);
@@ -24,6 +23,7 @@ public class Main {
 
             input = scanner.nextLine();
         }
+        
         String filterCity = scanner.nextLine();
 
         for (Students student : students) {
