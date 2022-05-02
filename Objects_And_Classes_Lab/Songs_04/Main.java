@@ -1,4 +1,4 @@
-package ObjectsAndClassesLab.Songs;
+package Songs_04;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +14,6 @@ public class Main {
 
         for (int i = 0; i < numSongs; i++) {
             String[] data = scanner.nextLine().split("_");
-
             String type = data[0];
             String name = data[1];
             String time = data[2];
@@ -26,6 +25,7 @@ public class Main {
 
             songs.add(song);
         }
+        
         String typeList = scanner.nextLine();
         if (typeList.equals("all")) {
             for (Song song : songs) {
@@ -38,5 +38,6 @@ public class Main {
                 }
             }
         }
+        
     }
 }
