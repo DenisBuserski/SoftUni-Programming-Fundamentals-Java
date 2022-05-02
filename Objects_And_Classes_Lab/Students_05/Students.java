@@ -1,4 +1,4 @@
-package ObjectsAndClassesLab.Students;
+package Students_05;
 
 public class Students {
     private final String firstName;
@@ -28,4 +28,5 @@ public class Students {
     public int getAge() {
         return age;
     }
+    
 }
