@@ -1,4 +1,4 @@
-package ObjectsAndClassesLab.Students20;
+package Students_20_06;
 
 public class Students {
     private String firstName;
@@ -12,15 +12,19 @@ public class Students {
         this.age = age;
         this.homeTown = homeTown;
     }
+    
     public  String getHomeTown() {
         return this.homeTown;
     }
+    
     public String getFirstName() {
         return firstName;
     }
+    
     public String getLastName() {
         return lastName;
     }
+    
     public int getAge() {
         return age;
     }
@@ -28,13 +32,17 @@ public class Students {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
+    
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+    
     public void setAge(int age) {
         this.age = age;
     }
+    
     public void setHomeTown(String homeTown) {
         this.homeTown = homeTown;
     }
+    
 }
