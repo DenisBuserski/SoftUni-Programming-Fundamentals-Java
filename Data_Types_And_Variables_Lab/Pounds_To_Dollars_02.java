@@ -1,8 +1,6 @@
-package DataTypesAndVariablesLab;
-
 import java.util.Scanner;
 
-public class PoundsToDollars {
+public class Pounds_To_Dollars_02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
