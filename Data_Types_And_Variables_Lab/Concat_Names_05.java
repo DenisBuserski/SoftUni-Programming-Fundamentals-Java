@@ -1,8 +1,6 @@
-package DataTypesAndVariablesLab;
+import java.util.Scanner;
 
-        import java.util.Scanner;
-
-public class ConcatNames {
+public class Concat_Names_05 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
