@@ -1,8 +1,6 @@
-package DataTypesAndVariablesLab;
-
 import java.util.Scanner;
 
-public class LowerOrUpper {
+public class Lower_Or_Upper_08 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -10,8 +8,7 @@ public class LowerOrUpper {
 
         if (Character.isLowerCase(firstChar)) {
             System.out.println("lower-case");
-        }
-        else if (Character.isUpperCase(firstChar)) {
+        } else if (Character.isUpperCase(firstChar)) {
             System.out.println("upper-case");
         }
 
