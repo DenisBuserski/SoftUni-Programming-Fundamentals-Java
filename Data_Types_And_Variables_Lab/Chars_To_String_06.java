@@ -1,8 +1,6 @@
-package DataTypesAndVariablesLab;
-
 import java.util.Scanner;
 
-public class CharsToString {
+public class Chars_To_String_06 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
