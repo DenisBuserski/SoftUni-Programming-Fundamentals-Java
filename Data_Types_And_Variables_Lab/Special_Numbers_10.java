@@ -1,8 +1,6 @@
-package DataTypesAndVariablesLab;
-
 import java.util.Scanner;
 
-public class SpecialNumbers {
+public class Special_Numbers_10 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -18,10 +16,10 @@ public class SpecialNumbers {
             }
             if (sum == 5 || sum == 7 || sum == 11) {
                 System.out.printf("%d -> True%n", i);
-            }
-            else {
+            } else {
                 System.out.printf("%d -> False%n", i);
             }
         }
+        
     }
 }
