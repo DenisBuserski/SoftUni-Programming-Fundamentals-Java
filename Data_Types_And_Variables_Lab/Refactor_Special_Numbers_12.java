@@ -1,8 +1,6 @@
-package DataTypesAndVariablesLab;
-
 import java.util.Scanner;
 
-public class RefactorSpecialNumbers {
+public class Refactor_Special_Numbers_12 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -17,14 +15,11 @@ public class RefactorSpecialNumbers {
                 sum += number % 10;
                 number = number / 10;
             }
-
             if (sum == 5 || sum == 7 || sum == 11) {
                 System.out.printf("%d -> True%n", num);
-            }
-            else {
+            } else {
                 System.out.printf("%d -> False%n", num);
             }
-
         }
 
     }
