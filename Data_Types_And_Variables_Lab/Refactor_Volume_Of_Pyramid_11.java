@@ -1,8 +1,6 @@
-package DataTypesAndVariablesLab;
-
 import java.util.Scanner;
 
-public class RefactorVolumeOfPyramid {
+public class Refactor_Volume_Of_Pyramid_11 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -17,7 +15,5 @@ public class RefactorVolumeOfPyramid {
 
         double result = (length * width * height) / 3;
         System.out.printf("Pyramid Volume: %.2f", result);
-
-
     }
 }
