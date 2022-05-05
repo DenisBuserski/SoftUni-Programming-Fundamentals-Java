@@ -1,8 +1,6 @@
-package DataTypesAndVariablesLab;
-
 import java.util.Scanner;
 
-public class CenturiesToMinutes {
+public class Centuries_To_Minutes_09 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
