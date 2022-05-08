@@ -1,7 +1,6 @@
-package ObjectsAndClassesMoreExercise.RawData;
+package Raw_Data_02;
 
 public class Cargo {
-
     private int weight;
     private String type;
 
