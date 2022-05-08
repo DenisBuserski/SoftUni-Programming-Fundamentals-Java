@@ -1,4 +1,4 @@
-package ObjectsAndClassesMoreExercise.CarSalesman;
+package Car_Salesman_03;
 
 import java.util.*;
 
@@ -6,17 +6,17 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        Map<String, List<Engine1>> engineParameters = new HashMap<>();
+        Map<String, List<Engine>> engineParameters = new HashMap<>();
         int length = 0;
         int countEngines = Integer.parseInt(scanner.nextLine());
         boolean hasNumber;
+        
         for (int i = 0; i < countEngines; i++) {
             String[] tokens = scanner.nextLine().split("\\s+");
             String engineModel = tokens[0];
             String power = tokens[1];
             String displacement = "n/a";
             String efficiency = "n/a";
-
             length = tokens.length;
             if (length == 3) {
                 String current = tokens[2];
@@ -32,15 +32,12 @@ public class Main {
                 displacement = tokens[2];
                 efficiency = tokens[3];
             }
-
-            Engine1 currentEngine = new Engine1(engineModel, power, displacement, efficiency);
+            Engine currentEngine = new Engine(engineModel, power, displacement, efficiency);
             engineParameters.putIfAbsent(engineModel, new ArrayList<>());
             engineParameters.get(engineModel).add(currentEngine);
         }
 
-
-        Map<Integer, List<Car1>> carParameters = new LinkedHashMap<>();
-
+        Map<Integer, List<Car>> carParameters = new LinkedHashMap<>();
         int quantityCars = Integer.parseInt(scanner.nextLine());
 
         for (int i = 0; i < quantityCars; i++) {
@@ -64,16 +61,14 @@ public class Main {
                 weight = tokens[2];
                 color = tokens[3];
             }
-
-            Engine1 enginePerThisCar = getParticularEngine(engine, engineParameters);
-            Car1 currentCar = new Car1(model, enginePerThisCar, weight, color);
+            Engine enginePerThisCar = getParticularEngine(engine, engineParameters);
+            Car currentCar = new Car(model, enginePerThisCar, weight, color);
             int position = i;
             carParameters.putIfAbsent(position, new ArrayList<>());
             carParameters.get(position).add(currentCar);
         }
 
-
-        for (Map.Entry<Integer, List<Car1>> currentElement : carParameters.entrySet()) {
+        for (Map.Entry<Integer, List<Car>> currentElement : carParameters.entrySet()) {
             currentElement.getValue().stream().forEach(f -> {
                 System.out.println(String.format("%s:" + "\n" + "  %s:\n" +
                                 "    Power: %s\n" +
@@ -89,7 +84,7 @@ public class Main {
             });
         }
 
-//        for (List<Car1> value : carParameters.values()) {
+//        for (List<Car> value : carParameters.values()) {
 //            System.out.println(value.
 //                    toString().replace("[", "")
 //                    .replace("]", "")
@@ -97,18 +92,17 @@ public class Main {
 //        }
     }
 
-    private static Engine1 getParticularEngine(String engine, Map<String, List<Engine1>> engineParameters) {
-        List<Engine1> temp = new ArrayList<>();
-        Engine1 engine1;
-        for (Map.Entry<String, List<Engine1>> element : engineParameters.entrySet()) {
+    private static Engine getParticularEngine(String engine, Map<String, List<Engine>> engineParameters) {
+        List<Engine> temp = new ArrayList<>();
+        Engine engine;
+        for (Map.Entry<String, List<Engine>> element : engineParameters.entrySet()) {
             String modelCurrent = element.getKey();
             if (modelCurrent.equals(engine)) {
-                String specificModel = element
-                        .getValue().get(0).getEngineModel();
+                String specificModel = element.getValue().get(0).getEngineModel();
                 String power = element.getValue().get(0).getPower();
                 String displacement = element.getValue().get(0).getDisplacement();
                 String efficiency = element.getValue().get(0).getEfficiency();
-                return engine1 = new Engine1(specificModel, power, displacement, efficiency);
+                return engine = new Engine(specificModel, power, displacement, efficiency);
             }
         }
         return null;
@@ -123,4 +117,5 @@ public class Main {
         }
         return false;
     }
+    
 }
