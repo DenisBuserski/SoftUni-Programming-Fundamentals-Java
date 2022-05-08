@@ -1,6 +1,11 @@
-package ObjectsAndClassesMoreExercise.CarSalesman;
+package Car_Salesman_03;
 
-public class Engine1 {
+public class Engine {
+    private String engineModel;
+    private String power;
+    private String displacement;
+    private String efficiency;
+    
     public String getEfficiency() {
         return this.efficiency;
     }
@@ -17,7 +22,7 @@ public class Engine1 {
         return this.engineModel;
     }
 
-    public Engine1(String engineModel, String power, String displacement, String efficiency) {
+    public Engine(String engineModel, String power, String displacement, String efficiency) {
         this.engineModel = engineModel;
         this.power = power;
         this.displacement = displacement;
@@ -26,14 +31,10 @@ public class Engine1 {
 
     @Override
     public String toString() {
-        return "  " + this.engineModel + ":" + "\n"+String.format(
+        return "  " + this.engineModel + ":" + "\n" + String.format(
                 "    Power: %s%n" +
-                        "    Displacement: %s%n" +
-                        "    Efficiency: %s%n", this.power, this.displacement, this.efficiency);
+                "    Displacement: %s%n" +
+                "    Efficiency: %s%n", this.power, this.displacement, this.efficiency);
     }
-
-    private String engineModel;
-    private String power;
-    private String displacement;
-    private String efficiency;
+ 
 }
