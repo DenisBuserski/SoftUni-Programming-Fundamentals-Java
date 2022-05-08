@@ -1,7 +1,6 @@
-package ObjectsAndClassesMoreExercise.RawData;
+package Raw_Data_02;
 
 public class Tire {
-
     private double pressure;
     private int age;
 
@@ -14,4 +13,3 @@ public class Tire {
         return pressure;
     }
 }
-
