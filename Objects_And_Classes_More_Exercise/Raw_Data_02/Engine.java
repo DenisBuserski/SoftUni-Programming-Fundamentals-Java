@@ -1,4 +1,4 @@
-package ObjectsAndClassesMoreExercise.RawData;
+package Raw_Data_02;
 
 public class Engine {
     private int speed;
