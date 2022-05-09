@@ -1,11 +1,9 @@
-package ProgrammingFundamentalsMidExam27February2021;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class Problem02 {
+public class Problem_02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -64,11 +62,11 @@ public class Problem02 {
                     System.out.println();
                     break;
             }
+            
             command = scanner.nextLine();
         }
+        
         String weapon = String.join("", weaponName);
         System.out.printf("You crafted %s!", weapon);
-
-
     }
 }
