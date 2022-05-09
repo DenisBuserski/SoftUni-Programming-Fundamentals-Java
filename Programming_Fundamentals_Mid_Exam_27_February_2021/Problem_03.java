@@ -1,20 +1,18 @@
-package ProgrammingFundamentalsMidExam27February2021;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class Problem03 {
+public class Problem_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         List<Integer> priceRatings = Arrays.stream(scanner.nextLine().split(" ")).map(Integer::parseInt).collect(Collectors.toList());
         int entryPointIndex = Integer.parseInt(scanner.nextLine());
         String itemType = scanner.nextLine();
-
         int leftSum = 0;
         int rightSum = 0;
+        
         switch (itemType) {
             case "cheap":
                 int entryPoint = priceRatings.get(entryPointIndex);
@@ -43,10 +41,12 @@ public class Problem03 {
                 }
                 break;
         }
+        
         if (leftSum >= rightSum) {
             System.out.printf("Left - %d", leftSum);
         } else {
             System.out.printf("Right - %d", rightSum);
         }
+        
     }
 }
