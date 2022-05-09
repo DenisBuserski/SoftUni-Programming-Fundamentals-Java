@@ -1,8 +1,6 @@
-package MethodsExercise;
-
 import java.util.Scanner;
 
-public class SmallestOfThreeNumbers {
+public class Smallest_Of_Three_Numbers_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -24,4 +22,5 @@ public class SmallestOfThreeNumbers {
         }
         System.out.println(result);
     }
+    
 }
