@@ -1,8 +1,6 @@
-package ProgrammingFundamentalsMidExam27February2021;
-
 import java.util.Scanner;
 
-public class Problem01 {
+public class Problem_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -16,6 +14,7 @@ public class Problem01 {
         double totalEgg = eggPrice * 10 * numberOfStudents;
         int freePackages = numberOfStudents / 5;
         double totalFlour = 0;
+        
         if (freePackages == 0) {
             totalFlour = flourPrice * numberOfStudents;
         } else {
