@@ -1,8 +1,6 @@
-package MethodsExercise;
-
 import java.util.Scanner;
 
-public class AddAndSubtract {
+public class Add_And_Subtract_05 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -22,4 +20,5 @@ public class AddAndSubtract {
     private static int operationAdd(int number1, int number2) {
         return number1 + number2;
     }
+    
 }
