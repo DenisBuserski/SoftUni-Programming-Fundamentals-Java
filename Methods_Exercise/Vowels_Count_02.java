@@ -1,8 +1,6 @@
-package MethodsExercise;
-
 import java.util.Scanner;
 
-public class VowelsCount {
+public class Vowels_Count_02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -16,7 +14,6 @@ public class VowelsCount {
         int vowelsSum = 0;
         for (int i = 0; i < word.length(); i++) {
             char letter = word.charAt(i);
-
             switch (letter) {
                 case 97:
                     vowelsSum++;
@@ -49,8 +46,8 @@ public class VowelsCount {
                     vowelsSum++;
                     break;
             }
-
         }
+        
         System.out.println(vowelsSum);
     }
 }
