@@ -1,8 +1,6 @@
-package MethodsExercise;
-
 import java.util.Scanner;
 
-public class MiddleCharacters {
+public class Middle_Characters_06 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -19,6 +17,7 @@ public class MiddleCharacters {
             System.out.println(letter);
         }
     }
+    
     private static void evenWord(String word) {
         if (word.length() % 2 == 0) {
             char middleLetter1 = word.charAt(word.length() / 2);
@@ -28,4 +27,5 @@ public class MiddleCharacters {
             System.out.println(letter2 + letter1);
         }
     }
+    
 }
