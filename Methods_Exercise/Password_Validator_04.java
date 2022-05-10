@@ -1,8 +1,6 @@
-package MethodsExercise;
-
 import java.util.Scanner;
 
-public class PasswordValidator {
+public class Password_Validator_04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -21,7 +19,6 @@ public class PasswordValidator {
             System.out.println("Password is valid");
         }
 
-
     }
 
     static boolean validateLength (String pass) {
@@ -33,10 +30,8 @@ public class PasswordValidator {
     }
 
     static boolean validateContent (String pass) {
-
         for (int index = 0; index <= pass.length() - 1; index++) {
             char currentSymbol = pass.charAt(index);
-
             boolean isSmallLetter = currentSymbol >= 97 && currentSymbol <= 120;
             boolean isCapitalLetter = currentSymbol >= 65 && currentSymbol <= 90;
             boolean isDigit = currentSymbol >= 48 && currentSymbol <= 57;
@@ -52,12 +47,10 @@ public class PasswordValidator {
         int countDigits = 0;
         for (int index = 0; index <= pass.length() - 1; index++) {
             char currentSymbol = pass.charAt(index);
-
             if (Character.isDigit(currentSymbol)) {
                 countDigits++;
             }
         }
-
 
         if (countDigits >= 2) {
             return true;
@@ -65,4 +58,5 @@ public class PasswordValidator {
             return false;
         }
     }
+    
 }
