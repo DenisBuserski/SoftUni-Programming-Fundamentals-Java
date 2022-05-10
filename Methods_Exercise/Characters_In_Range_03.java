@@ -1,8 +1,6 @@
-package MethodsExercise;
-
 import java.util.Scanner;
 
-public class CharactersInRange {
+public class Characters_In_Range_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -12,8 +10,8 @@ public class CharactersInRange {
         printResult(symbol1, symbol2);
 
     }
+    
     private static void printResult(char symbol1, char symbol2) {
-
         if (symbol2 < symbol1) {
             for (int i = symbol2 + 1; i < symbol1; i++) {
                 System.out.print((char) i + " ");
@@ -23,8 +21,6 @@ public class CharactersInRange {
                 System.out.print((char) i + " ");
             }
         }
-
-
-
     }
+    
 }
