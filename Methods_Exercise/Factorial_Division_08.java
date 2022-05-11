@@ -1,5 +1,3 @@
-package MethodsExercise;
-
 import java.util.Scanner;
 
 public class FactorialDivision {
@@ -9,12 +7,9 @@ public class FactorialDivision {
         double number1 = Double.parseDouble(scanner.nextLine());
         double number2 = Double.parseDouble(scanner.nextLine());
 
-
-
         getNumber(number1, number2);
-
-
     }
+    
     private static void getNumber(double number1, double number2) {
         double factorial1 = 1;
         double factorial2 = 1;
