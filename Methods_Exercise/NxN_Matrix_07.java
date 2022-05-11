@@ -1,8 +1,6 @@
-package MethodsExercise;
-
 import java.util.Scanner;
 
-public class NxNMatrix {
+public class NxN_Matrix_07 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -14,5 +12,6 @@ public class NxNMatrix {
             }
             System.out.println();
         }
+        
     }
 }
