@@ -1,19 +1,15 @@
-package MethodsExercise;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ArrayManipulator {
+public class Array_Manipulator_11 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int[] numbers = Arrays.stream(scanner.nextLine().split(" "))
-                .mapToInt(Integer::parseInt).toArray();
+        int[] numbers = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
 
         String input = scanner.nextLine();
         while (!input.equals("end")) {
             String[] commands = input.split(" ");
-
             boolean isEven = input.contains("even");
 
             switch (commands[0]) {
@@ -56,8 +52,8 @@ public class ArrayManipulator {
         printArray(numbers);
     }
 
-    //разместване на масива след определен индекс, който се подава в командата;
-    //връща масивът с разменени индекси
+    // Разместване на масива след определен индекс, който се подава в командата;
+    // Връща масивът с разменени индекси
     private static int[] exchangeArrayByIndex(int[] numbers, String[] commands) {
         int index = Integer.parseInt(commands[1]);
         int[] temp = new int[numbers.length];
@@ -65,11 +61,9 @@ public class ArrayManipulator {
         if (index <= numbers.length - 1 && index >= 0) {
             for (int i = 0; i <= index; i++) {
                 temp[temp.length - 1 - index + i] = numbers[i];
-
             }
             for (int startIndex = 0; startIndex < temp.length - 1 - index; startIndex++) {
                 temp[startIndex] = numbers[index + 1 + startIndex];
-
             }
             return temp;
         } else {
@@ -78,25 +72,24 @@ public class ArrayManipulator {
         return numbers;
     }
 
-    //принтиране на индекса на най-голямото четно число
+    // Принтиране на индекса на най-голямото четно число
     private static void printMaxEven(int[] numbers, String[] commands) {
         int index = getMax(numbers, commands);
         printIndex(index);
     }
 
-    //принтиране на индекса на най-голямото нечетно число
+    // Принтиране на индекса на най-голямото нечетно число
     private static void printMaxOdd(int[] numbers, String[] commands) {
         int index = getMax(numbers, commands);
         printIndex(index);
     }
 
-    //проверка за индекса на най-голямото не/четно число в масива
+    // Проверка за индекса на най-голямото не/четно число в масива
     private static int getMax(int[] numbers, String[] commands) {
         int max = Integer.MIN_VALUE;
         int index = -1;
 
         for (int i = 0; i < numbers.length; i++) {
-
             boolean isGreaterThanMax = numbers[i] >= max;
             if (commands[1].equals("even")) {
                 if (isGreaterThanMax && numbers[i] % 2 == 0) {
@@ -113,27 +106,24 @@ public class ArrayManipulator {
         return index;
     }
 
-    //принтиране на индекса на най-малкото четно число
+    // Принтиране на индекса на най-малкото четно число
     private static void printMinEven(int[] numbers, String[] commands) {
         int index = getMin(numbers, commands);
         printIndex(index);
     }
 
-    //принтиране на индекса на най-малкото нечетно число
+    // Принтиране на индекса на най-малкото нечетно число
     private static void printMinOdd(int[] numbers, String[] commands) {
         int index = getMin(numbers, commands);
         printIndex(index);
     }
 
-    //проверка за индекса на най-малкото не/четно число в масива
+    // Проверка за индекса на най-малкото не/четно число в масива
     private static int getMin(int[] numbers, String[] commands) {
         int min = Integer.MAX_VALUE;
         int index = -1;
-
         for (int i = 0; i < numbers.length; i++) {
-
             boolean isSmallerThanMin = numbers[i] <= min;
-
             if (commands[1].equals("even")) {
                 if (isSmallerThanMin && numbers[i] % 2 == 0) {
                     min = numbers[i];
@@ -149,9 +139,8 @@ public class ArrayManipulator {
         return index;
     }
 
-    //метод, който принтира индекс на най-малкото/голямо не/четно число от масива
-    //ако не е намерено съвпадение, индексът ще остане - 1 и
-    //ще се принтира съобщението
+    // Метод, който принтира индекс на най-малкото/голямо не/четно число от масива
+    // Ако не е намерено съвпадение, индексът ще остане - 1 и ще се принтира съобщението
     private static void printIndex(int index) {
         if (index > -1) {
             System.out.println(index);
@@ -160,19 +149,19 @@ public class ArrayManipulator {
         }
     }
 
-    //принтиране на първите n четни числа
+    // Принтиране на първите n четни числа
     private static void printFirstEvenNumbers(int[] numbers, String[] commands) {
         String output = getFirstNumbers(numbers, commands);
         printOutput(output, commands);
     }
 
-    //принтиране на първите n нечетни числа
+    // Принтиране на първите n нечетни числа
     private static void printFirstOddNumbers(int[] numbers, String[] commands) {
         String output = getFirstNumbers(numbers, commands);
         printOutput(output, commands);
     }
 
-    //получаване на първите n не/четни числа от масива
+    // Получаване на първите n не/четни числа от масива
     private static String getFirstNumbers(int[] numbers, String[] commands) {
         int count = Integer.parseInt(commands[1]);
         int counterOfMatchesFound = 0;
@@ -202,19 +191,19 @@ public class ArrayManipulator {
         return builder.toString();
     }
 
-    //принтиране на последните n четни числа
+    // Принтиране на последните n четни числа
     private static void printLastEvenNumbers(int[] numbers, String[] commands) {
         String output = getLastNumbers(numbers, commands);
         printOutput(output, commands);
     }
 
-    //принтиране на последните n нечетни числа
+    // Принтиране на последните n нечетни числа
     private static void printLastOddNumbers(int[] numbers, String[] commands) {
         String output = getLastNumbers(numbers, commands);
         printOutput(output, commands);
     }
 
-    //намиране на последните n не/четни числа в масива
+    // Намиране на последните n не/четни числа в масива
     private static String getLastNumbers(int[] numbers, String[] commands) {
         int count = Integer.parseInt(commands[1]);
         StringBuilder builder = new StringBuilder();
@@ -223,6 +212,7 @@ public class ArrayManipulator {
         if (count > numbers.length) {
             return "Invalid count";
         }
+        
         if (count > 0) {
             for (int i = numbers.length - 1; i >= 0; i--) {
                 if (commands[2].equals("even")) {
@@ -245,17 +235,14 @@ public class ArrayManipulator {
         return builder.toString();
     }
 
-    //метод, който принтира според условията
+    // Метод, който принтира според условията
     private static void printOutput(String output, String[] commands) {
-
         if (output.equals("Invalid count")) {
             System.out.println(output);
         } else if (output.length() <= 0) {
             System.out.printf("[]%n");
         } else {
-            int[] array = Arrays.stream(output.split(" "))
-                    .mapToInt(Integer::parseInt).toArray();
-
+            int[] array = Arrays.stream(output.split(" ")).mapToInt(Integer::parseInt).toArray();
             if (commands[0].equals("first")) {
                 printArray(array);
             } else {
@@ -264,7 +251,7 @@ public class ArrayManipulator {
         }
     }
 
-    //метод, който печата масива отпред назад
+    // Метод, който печата масива отпред назад
     private static void printArray(int[] numbers) {
         System.out.print("[");
         for (int i = 0; i < numbers.length; i++) {
@@ -277,7 +264,7 @@ public class ArrayManipulator {
         System.out.printf("]%n");
     }
 
-    //метод, който печата масива отзад напред
+    // Метод, който печата масива отзад напред
     private static void printArrayBackwards(int[] numbers) {
         System.out.print("[");
         for (int j = numbers.length - 1; j >= 0; j--) {
@@ -289,5 +276,5 @@ public class ArrayManipulator {
         }
         System.out.printf("]%n");
     }
+    
 }
-
