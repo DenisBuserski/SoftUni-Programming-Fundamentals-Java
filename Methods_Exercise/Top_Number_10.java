@@ -1,9 +1,7 @@
-package MethodsExercise;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class TopNumber {
+public class Top_Number_10 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -11,8 +9,8 @@ public class TopNumber {
         isTop(n);
 
     }
+    
     private static void isTop(int n) {
-
         for (int i = 1; i <= n; i++) {
             int number = i;
             int sum = 0;
@@ -21,7 +19,6 @@ public class TopNumber {
             while (number != 0) {
                 int currentDigit = number % 10;
                 sum += currentDigit;
-
                 if (currentDigit % 2 != 0) {
                     hasOdd = true;
                 }
@@ -31,7 +28,7 @@ public class TopNumber {
             if (sum % 8 == 0 && hasOdd) {
                 System.out.println(i);
             }
-
         }
+        
     }
 }
