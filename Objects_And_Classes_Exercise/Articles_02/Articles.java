@@ -1,4 +1,4 @@
-package ObjectsAndClassesExercise.Articles;
+package Articles_02;
 
 public class Articles {
     private String title;
@@ -27,4 +27,5 @@ public class Articles {
     public String toString() {
         return title + " - " + content + ": " + author;
     }
+    
 }
