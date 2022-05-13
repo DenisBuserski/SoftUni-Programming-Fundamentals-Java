@@ -1,4 +1,4 @@
-package ObjectsAndClassesExercise.OpinionPoll;
+package Opinion_Poll_03;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -18,7 +18,6 @@ public class Main {
             String personalData = scanner.nextLine();
             String name = personalData.split("\\s+")[0];
             int age = Integer.parseInt(personalData.split("\\s+")[1]);
-
             Person person = new Person(name, age);
             people.add(person);
         }
@@ -29,7 +28,6 @@ public class Main {
         for (Person person : people) {
             System.out.println(person);
         }
-
 
     }
 }
