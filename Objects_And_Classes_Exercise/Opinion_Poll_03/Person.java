@@ -1,4 +1,4 @@
-package ObjectsAndClassesExercise.OpinionPoll;
+package Opinion_Poll_03;
 
 public class Person {
     private String name;
@@ -16,8 +16,10 @@ public class Person {
     public int getAge() {
         return this.age = age;
     }
+    
     @Override
     public String toString() {
         return name + " - " + age;
     }
+    
 }
