@@ -1,9 +1,7 @@
-package ObjectsAndClassesExercise;
-
 import java.util.Random;
 import java.util.Scanner;
 
-public class AdvertisementMessage {
+public class Advertisement_Message_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -33,5 +31,6 @@ public class AdvertisementMessage {
 
             System.out.println(phrases[phrasesIndex] + " " + events[eventsIndex] + " " + authors[authorsIndex] + " - " + cities[citiesIndex]);
         }
+        
     }
 }
