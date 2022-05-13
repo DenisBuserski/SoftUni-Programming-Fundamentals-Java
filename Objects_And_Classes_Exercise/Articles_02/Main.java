@@ -1,4 +1,4 @@
-package ObjectsAndClassesExercise.Articles;
+package Articles_02;
 
 import java.util.Scanner;
 
@@ -16,7 +16,6 @@ public class Main {
 
         for (int i = 0; i < n; i++) {
             String command = scanner.nextLine();
-
             String typeCommand = command.split(": ")[0];
             String newData = command.split(": ")[1];
 
@@ -32,7 +31,6 @@ public class Main {
                     break;
             }
         }
-
 
         System.out.println(article);
     }
