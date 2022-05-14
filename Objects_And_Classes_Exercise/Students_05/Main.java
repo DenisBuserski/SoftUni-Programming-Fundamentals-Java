@@ -1,4 +1,4 @@
-package ObjectsAndClassesExercise.Students;
+package Students_05;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -16,7 +16,6 @@ public class Main {
 
         for (int i = 1; i <= n; i++) {
             String studentsData = scanner.nextLine();
-
             String firstName = studentsData.split("\\s+")[0];
             String lastName = studentsData.split("\\s+")[1];
             double grade = Double.parseDouble(studentsData.split("\\s+")[2]);
@@ -25,12 +24,14 @@ public class Main {
             students.add(student);
         }
 
-        List<Student> sortedList = students.stream()
-                .sorted(Comparator.comparing(Student::getGrade)
-                        . reversed()).collect(Collectors.toList());
+        List<Student> sortedList = students
+            .stream()
+            .sorted(Comparator.comparing(Student::getGrade).reversed())
+            .collect(Collectors.toList());
 
         for (Student student : sortedList) {
             System.out.println(student);
         }
+        
     }
 }
