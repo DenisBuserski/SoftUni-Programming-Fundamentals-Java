@@ -1,4 +1,4 @@
-package ObjectsAndClassesExercise.Students;
+package Students_05;
 
 public class Student {
     private String firstName;
@@ -18,8 +18,6 @@ public class Student {
     @Override
     public String toString() {
         return String.format("%s %s: %.2f", firstName, lastName, grade);
-
-
     }
 
 }
