@@ -1,4 +1,4 @@
-package ObjectsAndClassesExercise.Articles20;
+package Articles_20_04;
 
 public class Articles20 {
     private String title;
@@ -25,6 +25,7 @@ public class Articles20 {
 
     @Override
     public String toString() {
-        return title + " -" + content + ":" + author;
+        return title + " - " + content + ": " + author;
     }
+    
 }
