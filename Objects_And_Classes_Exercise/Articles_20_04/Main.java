@@ -1,4 +1,4 @@
-package ObjectsAndClassesExercise.Articles20;
+package Articles_20_04;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -22,7 +22,7 @@ public class Main {
             Articles20 articles20 = new Articles20(title, content, author);
             articles20List.add(articles20);
         }
-        //List<Articles20> sortedList = articles20List.stream().sorted(Comparator.comparing(Articles20::toString).reversed()).collect(Collectors.toList());
+        // List<Articles20> sortedList = articles20List.stream().sorted(Comparator.comparing(Articles20::toString).reversed()).collect(Collectors.toList());
 
         String command = scanner.nextLine();
         switch (command) {
@@ -37,12 +37,9 @@ public class Main {
                 break;
         }
 
-
         for (Articles20 articles20 : articles20List) {
             System.out.println(articles20.toString());
         }
-
-
 
     }
 }
