@@ -1,4 +1,4 @@
-package ObjectsAndClassesExercise.VehicleCatalogue;
+package Vehicle_Catalogue_06;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,30 +9,25 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-
         String input = scanner.nextLine();
 
         List<Vehicle> vehicles = new ArrayList<>();
+        
         while (!"End".equals(input)) {
-
             String[] command = input.split("\\s+");
-
             String type = command[0];
             String model = command[1];
             String color = command[2];
             int horsePower = Integer.parseInt(command[3]);
 
             Vehicle vehicle = new Vehicle();
-
             vehicle.setType(type);
             vehicle.setModel(model);
             vehicle.setColor(color);
             vehicle.setHorsePower(horsePower);
-
             vehicles.add(vehicle);
 
             input = scanner.nextLine();
-
         }
 
         String model = "";
@@ -42,8 +37,8 @@ public class Main {
                     .stream()
                     .filter(v -> v.getModel().equals(finalModel))
                     .forEach(System.out::println);
-
         }
+        
         System.out.println(String.format("Cars have average horsepower of: %.2f.", average(vehicles.stream()
                 .filter(v -> v.getType().equals("car"))
                 .collect(Collectors.toList()))));
@@ -65,5 +60,5 @@ public class Main {
         }
         return sum / vehicles.size();
     }
+    
 }
-
