@@ -1,4 +1,4 @@
-package ObjectsAndClassesExercise.OrderByAge;
+package Order_By_Age_07;
 
 public class OrderByAge {
     private String name;
@@ -17,7 +17,7 @@ public class OrderByAge {
 
     @Override
     public String toString() {
-        return String.format("%s with ID: %s is %d years old.", name, ID, age);
+        return String.format("%s with ID: %s is %d years old.", name, ID, age); // Stefan with ID: 524244 is 10 years old.
     }
+    
 }
-//Stefan with ID: 524244 is 10 years old.
