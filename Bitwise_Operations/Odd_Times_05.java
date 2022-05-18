@@ -1,9 +1,7 @@
-package BitwiseOperationsLab;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class OddTimes {
+public class Odd_Times_05 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -14,8 +12,5 @@ public class OddTimes {
             result = result ^ numbers[i];
         }
         System.out.println(result);
-
-
-
     }
 }
