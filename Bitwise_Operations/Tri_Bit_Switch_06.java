@@ -1,8 +1,6 @@
-package BitwiseOperationsLab;
-
 import java.util.Scanner;
 
-public class TriBitSwitch {
+public class Tri_Bit_Switch_06 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -13,9 +11,5 @@ public class TriBitSwitch {
         int result = number ^ mask;
 
         System.out.println(result);
-
-
-
-
     }
 }
