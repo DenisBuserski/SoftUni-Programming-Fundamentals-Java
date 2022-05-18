@@ -1,8 +1,6 @@
-package BitwiseOperationsLab;
-
 import java.util.Scanner;
 
-public class BitDestroyer {
+public class Bit_Destroyer_04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
