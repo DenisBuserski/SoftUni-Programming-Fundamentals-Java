@@ -1,8 +1,6 @@
-package BitwiseOperationsLab;
-
 import java.util.Scanner;
 
-public class BitAtPosition1 {
+public class Bit_At_Position_02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
