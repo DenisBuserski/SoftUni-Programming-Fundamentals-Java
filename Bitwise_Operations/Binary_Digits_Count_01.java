@@ -1,8 +1,6 @@
-package BitwiseOperationsLab;
-
 import java.util.Scanner;
 
-public class BinaryDigitsCount {
+public class Binary_Digits_Count_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
