@@ -1,8 +1,6 @@
-package BitwiseOperationsLab;
-
 import java.util.Scanner;
 
-public class PthBit {
+public class Pth_Bit_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
