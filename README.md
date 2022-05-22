@@ -6,39 +6,39 @@
 
 
 ## Course topics
-Basic Syntax, Conditional Statements and Loops
+### Basic Syntax, Conditional Statements and Loops
 - Lab
 - Exercise
 - More Exercise
-Data Types and Variables
+### Data Types and Variables
 - Lab
 - Exercise
 - More Exercise
-Arrays
+### Arrays
 - Lab
 - Exercise
 - More Exercise
-Methods
+### Methods
 - Lab
 - Exercise
 - More Exercise
-Lists
+### Lists
 - Lab
 - Exercise
 - More Exercise
-Objects and Classes
+### Objects and Classes
 - Lab
 - Exercise
 - More Exercise
-Associative Arrays
+### Associative Arrays
 - Lab
 - Exercise
 - More Exercise
-Text Processing
+### Text Processing
 - Lab
 - Exercise
 - More Exercise
-Regular Expressions
+### Regular Expressions
 - Lab
 - Exercise
 - More Exercise
