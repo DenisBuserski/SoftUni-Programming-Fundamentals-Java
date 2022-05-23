@@ -7,7 +7,7 @@
 
 ## Course topics
 ### Basic Syntax, Conditional Statements and Loops
-- Lab
+- [Lab](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Basic_Syntax_Conditional_Statements_And_Loops_Lab)
 - Exercise
 - More Exercise
 ### Data Types and Variables
