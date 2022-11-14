@@ -89,7 +89,6 @@ public class Gaming_Store_03 {
             }
         }
         
-        
         if (money > 0) {
             System.out.printf("Total spent: $%.2f. Remaining: $%.2f", moneySpend, money);
         }
