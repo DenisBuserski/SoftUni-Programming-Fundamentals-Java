@@ -11,7 +11,6 @@ public class Messages_05 {
 
         for (int letters = 1; letters <= lettersInWord; letters++) {
             String digits = scanner.nextLine();
-
             int wordLength = digits.length();
 
             if (wordLength == 1) {
@@ -82,6 +81,5 @@ public class Messages_05 {
         }
         
         System.out.println(word);
-
     }
 }
