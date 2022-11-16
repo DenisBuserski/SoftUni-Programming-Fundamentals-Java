@@ -5,14 +5,13 @@ public class Sum_Digits_02 {
         Scanner scanner = new Scanner(System.in);
 
         int number = Integer.parseInt(scanner.nextLine());
-
-       int digitsSum = 0;
+        int digitsSum = 0;
 
        while (number > 0) {
            digitsSum += number % 10;
            number = number / 10;
        }
-       System.out.println(digitsSum);
         
+       System.out.println(digitsSum);
     }
 }
