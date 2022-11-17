@@ -14,6 +14,7 @@ public class Refactoring_Prime_Checker_04 {
                     break;
                 }
             }
+            
             System.out.printf("%d -> %s%n", i, isPrime);
         }
 
