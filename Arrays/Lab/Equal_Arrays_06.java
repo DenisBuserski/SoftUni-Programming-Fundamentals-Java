@@ -16,7 +16,6 @@ public class Equal_Arrays_06 {
             secondArray[i] = Integer.parseInt(splittedInput[i]);
         }
 
-
         int sum = 0;
         boolean areIdentical = true;
 
