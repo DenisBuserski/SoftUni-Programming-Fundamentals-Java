@@ -6,7 +6,6 @@ public class Array_Rotation_04 {
         Scanner scanner = new Scanner(System.in);
 
         int[] numbers = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(e -> Integer.parseInt(e)).toArray();
-
         int countRotations = Integer.parseInt(scanner.nextLine());
 
         for (int i = 1; i <= countRotations; i++) {
