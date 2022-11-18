@@ -7,7 +7,6 @@ public class Lady_Bugs_10 {
 
         int fieldSize = Integer.parseInt(scanner.nextLine());
         int[] field = new int[fieldSize];
-
         int[] ladyBugsIndexes = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(e -> Integer.parseInt(e)).toArray();
 
         for (int ladyBugIndex : ladyBugsIndexes) {
@@ -31,15 +30,17 @@ public class Lady_Bugs_10 {
                     while (index <= field.length - 1 && field[index] == 1) {
                         index += flyLength;
                     }
+                    
                     if (index <= field.length - 1) {
                         field[index] = 1;
                     }
                 } else if (direction.equals("left")) {
                     index -= flyLength;
-
+                    
                     while (index >= 0 && field[index] == 1) {
                         index -= flyLength;
                     }
+                    
                     if (index >= 0) {
                         field[index] = 1;
                     }
