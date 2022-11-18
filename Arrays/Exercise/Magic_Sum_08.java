@@ -6,14 +6,12 @@ public class Magic_Sum_08 {
         Scanner scanner = new Scanner(System.in);
 
         int [] numbers = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(e -> Integer.parseInt(e)).toArray();
-
         int sum = Integer.parseInt(scanner.nextLine());
 
         for (int index = 0; index <= numbers.length - 1; index++) {
             int number = numbers[index];
 
             for (int i = index + 1; i <= numbers.length - 1; i++) {
-
                 if (index == i) {
                     continue;
                 }
