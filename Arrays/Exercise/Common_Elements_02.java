@@ -10,7 +10,6 @@ public class Common_Elements_02 {
 
         for (String word2 : words2) {
             for (String word1 : words1) {
-
                 if (word2.equals(word1)) {
                     System.out.print(word2 + " ");
                     break;
