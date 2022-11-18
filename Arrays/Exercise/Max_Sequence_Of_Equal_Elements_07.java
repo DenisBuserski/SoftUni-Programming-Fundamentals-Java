@@ -10,7 +10,6 @@ public class Max_Sequence_Of_Equal_Elements_07 {
         int maxNumber = Integer.MIN_VALUE;
         int leftMaxNumber = Integer.MIN_VALUE;
         int leftMax = Integer.MIN_VALUE;
-
         int maxSequence = 0;
 
         for (int i = 0; i < array.length - 1; i++) {
