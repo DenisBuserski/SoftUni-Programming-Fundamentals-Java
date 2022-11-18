@@ -10,7 +10,6 @@ public class Kamino_Factory_09 {
         int bestIndex = Integer.MIN_VALUE;
         int bestSampleIndex = 0;
         int bestSum = 0;
-
         int sample = 0;
         int length = Integer.parseInt(scanner.nextLine());
         int[] bestDna = new int[length];
@@ -26,7 +25,6 @@ public class Kamino_Factory_09 {
             int curSum = 0;
 
             for (int i = 0; i < curSample.length; i++) {
-
                 if (curSample[i] == 1) {
                     curLength++;
                     if (curLength > curBestLength) {
@@ -45,19 +43,19 @@ public class Kamino_Factory_09 {
             int curStartIndex = curEndIndex - curBestLength +1;
             boolean isBetter = false;
 
-            if(curBestLength > bestSequence){
+            if(curBestLength > bestSequence) {
                 isBetter = true;
-            }else if (curBestLength == bestSequence){
-                if(curStartIndex < bestIndex){
+            } else if (curBestLength == bestSequence) {
+                if (curStartIndex < bestIndex) {
                     isBetter = true;
-                }else if (curStartIndex == bestIndex){
-                    if(curSum > bestSum){
+                } else if (curStartIndex == bestIndex) {
+                    if (curSum > bestSum) {
                         isBetter = true;
                     }
                 }
             }
 
-            if(isBetter){
+            if (isBetter) {
                 bestDna = curSample;
                 bestIndex = curStartIndex;
                 bestSequence = curBestLength;
