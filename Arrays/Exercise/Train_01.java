@@ -13,7 +13,6 @@ public class Train_01 {
             passangers = Integer.parseInt(scanner.nextLine());
             sumPassangers += passangers;
             System.out.print(passangers + " ");
-
         }
         
         System.out.println();
