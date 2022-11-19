@@ -5,7 +5,6 @@ public class Recursive_Fibonacci_03 {
         Scanner scanner = new Scanner(System.in);
 
         int n = Integer.parseInt(scanner.nextLine());
-
         long[] fibonacci = new long[n];
 
         if (n >= 1 && n <= 50) {
