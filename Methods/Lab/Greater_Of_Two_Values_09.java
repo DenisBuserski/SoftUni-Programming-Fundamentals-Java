@@ -24,6 +24,7 @@ public class Greater_Of_Two_Values_09 {
     private static void getMaxInteger(String type, String value1, String value2) {
         int number1 = Integer.parseInt(value1);
         int number2 = Integer.parseInt(value2);
+        
         if (number1 >= number2) {
             System.out.println(number1);
         } else {
@@ -43,6 +44,7 @@ public class Greater_Of_Two_Values_09 {
         int charValue1 = value1.charAt(0);
         int charValue2 = value2.charAt(0);
         Math.max(charValue1, charValue2);
+        
         if (charValue1 > charValue2) {
             System.out.println(value1);
         } else {
