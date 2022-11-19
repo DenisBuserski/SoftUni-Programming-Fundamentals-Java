@@ -5,7 +5,6 @@ public class Pascal_Triangle_02 {
         Scanner scanner = new Scanner(System.in);
 
         int N = Integer.parseInt(scanner.nextLine());
-
         long[][] pascalArray = new long[N][];
 
         for (int i = 0; i < N; i++) {
