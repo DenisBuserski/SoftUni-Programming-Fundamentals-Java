@@ -20,6 +20,7 @@ public class Smallest_Of_Three_Numbers_01 {
         } else {
             result = number3;
         }
+        
         System.out.println(result);
     }
     
