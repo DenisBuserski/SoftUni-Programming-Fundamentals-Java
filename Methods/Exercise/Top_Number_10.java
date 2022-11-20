@@ -28,6 +28,6 @@ public class Top_Number_10 {
                 System.out.println(i);
             }
         }
-        
     }
+    
 }
