@@ -7,7 +7,6 @@ public class Top_Number_10 {
 
         int n = Integer.parseInt(scanner.nextLine());
         isTop(n);
-
     }
     
     private static void isTop(int n) {
