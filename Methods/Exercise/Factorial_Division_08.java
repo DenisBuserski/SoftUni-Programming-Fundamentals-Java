@@ -13,9 +13,11 @@ public class Factorial_Division_08 {
     private static void getNumber(double number1, double number2) {
         double factorial1 = 1;
         double factorial2 = 1;
+        
         for (int i = 1; i <= number1; i++) {
             factorial1 *= i;
         }
+        
         for (int i = 1; i <= number2; i++) {
             factorial2 *= i;
         }
