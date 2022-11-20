@@ -28,6 +28,7 @@ public class Math_Operations_11 {
                 result = number1 / number2;
                 break;
         }
+        
         System.out.printf("%.0f", result);
     }
         
