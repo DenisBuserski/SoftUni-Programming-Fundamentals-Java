@@ -15,6 +15,7 @@ public class Merging_Lists_03 {
         for (int i = 0; i < size; i++) {
             System.out.print(firstList.get(i) + " " + secondList.get(i) + " ");
         }
+        
         printTheRest(firstList, size);
         printTheRest(secondList, size);
     }
@@ -24,4 +25,5 @@ public class Merging_Lists_03 {
             System.out.print(numbers.get(i) + " ");
         }
     }
+    
 }
