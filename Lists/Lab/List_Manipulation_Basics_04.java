@@ -12,7 +12,6 @@ public class List_Manipulation_Basics_04 {
 
         while (true) {
             String line = scanner.nextLine();
-
             if (line.equals("end")) {
                 break;
             }
@@ -39,6 +38,7 @@ public class List_Manipulation_Basics_04 {
                     break;
             }
         }
+        
         System.out.println(numbers.toString().replaceAll("[\\[\\],]", ""));
     }
 }
