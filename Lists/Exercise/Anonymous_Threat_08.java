@@ -43,6 +43,7 @@ public class Anonymous_Threat_08 {
                             separatedElement = "";
                         }
                     }
+                    
                     dividedString.add(separatedElement);
                     lineOfChars.remove(indexDivide);
 
@@ -51,6 +52,7 @@ public class Anonymous_Threat_08 {
                     }
                     break;
             }
+            
             input = scanner.nextLine();
         }
 
@@ -64,9 +66,11 @@ public class Anonymous_Threat_08 {
         if (startIndex < 0) {
             startIndex = 0;
         }
+        
         if (endIndex > lineOfChars.size() - 1) {
             endIndex = lineOfChars.size() - 1;
         }
+        
         int counter = startIndex;
         for (int i = startIndex; i < endIndex; i++) {
             String concat = lineOfChars.get(counter) + lineOfChars.get(counter + 1);
@@ -79,6 +83,7 @@ public class Anonymous_Threat_08 {
         String input = scanner.nextLine();
         String[] split = input.split("\\s+");
         List<String> characters = new ArrayList<>();
+        
         for (String elements : split) {
             String firstElement = elements;
             characters.add(firstElement);
