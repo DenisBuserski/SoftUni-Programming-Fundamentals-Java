@@ -11,9 +11,7 @@ public class Train_01 {
         int maxCapacity = Integer.parseInt(scanner.nextLine());
 
         String command = scanner.nextLine();
-
         while (!command.equals("end")) {
-
             if (command.equals("end")) {
                 break;
             }
@@ -38,6 +36,7 @@ public class Train_01 {
 
             command = scanner.nextLine();
         }
+        
         System.out.print(wagnos.toString().replaceAll("[\\[\\],]", ""));
     }
 }
