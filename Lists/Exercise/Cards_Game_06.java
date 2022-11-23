@@ -13,7 +13,6 @@ public class Cards_Game_06 {
         int sum = 0;
 
         while (!(deck1.isEmpty() || deck2.isEmpty())) {
-
             if (deck1.get(0).equals(deck2.get(0))) {
                 deck1.remove(0);
                 deck2.remove(0);
@@ -41,5 +40,6 @@ public class Cards_Game_06 {
             }
             System.out.printf("First player wins! Sum: %d", sum);
         }
+        
     }
 }
