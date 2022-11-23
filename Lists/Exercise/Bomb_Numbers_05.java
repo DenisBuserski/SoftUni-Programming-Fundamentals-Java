@@ -28,7 +28,7 @@ public class Bomb_Numbers_05 {
         for (int i = 0; i < numbers.size(); i++) {
             sum += numbers.get(i);
         }
+        
         System.out.println(sum);
-
     }
 }
