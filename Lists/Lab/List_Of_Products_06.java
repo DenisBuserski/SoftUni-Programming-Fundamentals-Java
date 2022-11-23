@@ -20,5 +20,6 @@ public class List_Of_Products_06 {
         for (int i = 0; i < products.size(); i++) {
             System.out.printf("%d.%s%n", i + 1, products.get(i));
         }
+        
     }
 }
