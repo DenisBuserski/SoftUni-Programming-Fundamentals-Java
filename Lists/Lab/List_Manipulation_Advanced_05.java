@@ -11,7 +11,6 @@ public class List_Manipulation_Advanced_05 {
 
         String command = scanner.nextLine();
         while (!command.equals("end")) {
-
             if (command.equals("end")) {
                 break;
             }
@@ -90,6 +89,7 @@ public class List_Manipulation_Advanced_05 {
                     }
                     break;
             }
+            
             command = scanner.nextLine();
         }
     }
