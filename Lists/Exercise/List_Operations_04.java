@@ -10,7 +10,6 @@ public class List_Operations_04 {
         List<Integer> numbers = Arrays.stream(scanner.nextLine().split(" ")).map(Integer::parseInt).collect(Collectors.toList());
 
         String input = scanner.nextLine();
-
         while (!input.equals("End")) {
             String[] tokens = input.split("\\s+");
             String command = tokens[0];
@@ -58,8 +57,8 @@ public class List_Operations_04 {
 
             input = scanner.nextLine();
         }
+        
         printList(numbers);
-
     }
 
     private static void printList(List<Integer> numbers) {
