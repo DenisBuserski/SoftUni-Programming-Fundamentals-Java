@@ -10,9 +10,7 @@ public class Change_List_02 {
         List<Integer> numbers = Arrays.stream(scanner.nextLine().split(" ")).map(Integer::parseInt).collect(Collectors.toList());
 
         String command = scanner.nextLine();
-
         while (!command.equals("end")) {
-
             if (command.equals("end")) {
                 break;
             }
@@ -33,6 +31,7 @@ public class Change_List_02 {
                 int index = Integer.parseInt(token[2]);
                 numbers.add(index, element);
             }
+            
             command = scanner.nextLine();
         }
         
