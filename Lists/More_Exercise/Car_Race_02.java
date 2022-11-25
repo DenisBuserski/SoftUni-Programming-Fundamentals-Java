@@ -21,6 +21,7 @@ public class Car_Race_02 {
                 timeFirstCar += time;
             }
         }
+        
         for (int index = times.size() - 1; index > finishTime; index--) {
             int time = times.get(index);
             if (time == 0) {
