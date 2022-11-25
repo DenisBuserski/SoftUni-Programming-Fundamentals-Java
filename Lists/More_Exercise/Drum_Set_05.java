@@ -11,6 +11,7 @@ public class Drum_Set_05 {
         double money = Double.parseDouble(scanner.nextLine());
         List<Integer> drumSet = Arrays.stream(scanner.nextLine().split(" ")).map(Integer::parseInt).collect(Collectors.toList());
         List<Integer> startingDrumSet = new ArrayList<>();
+        
         for (int index = 0; index < drumSet.size(); index++) {
             startingDrumSet.add(drumSet.get(index));
         }
