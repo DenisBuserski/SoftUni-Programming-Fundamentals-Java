@@ -13,7 +13,6 @@ public class Randomize_Words_01 {
             String temp = sentence[i];
             sentence[i] = sentence[randomIndex];
             sentence[randomIndex] = temp;
-
         }
         
         for (String word : sentence) {
