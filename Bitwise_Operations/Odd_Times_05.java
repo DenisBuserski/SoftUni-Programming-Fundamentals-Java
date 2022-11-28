@@ -11,6 +11,7 @@ public class Odd_Times_05 {
         for (int i = 1; i < numbers.length; i++) {
             result = result ^ numbers[i];
         }
+        
         System.out.println(result);
     }
 }
