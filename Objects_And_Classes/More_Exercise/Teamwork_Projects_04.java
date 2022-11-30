@@ -15,6 +15,7 @@ public class Teamwork_Projects_04 {
             String[] input = scan.nextLine().split("-".trim());
             String creator = input[0].trim();
             String teamName = input[1].trim();
+            
             if (teamsList.stream().anyMatch(e -> e.getName().equals(teamName))) {
                 System.out.printf("Team %s was already created!%n", teamName);
             } else if (teamsList.stream().anyMatch(e -> e.getCreator().equals(creator))) {
