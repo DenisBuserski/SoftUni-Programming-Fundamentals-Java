@@ -18,6 +18,7 @@ public class Main {
             String displacement = "n/a";
             String efficiency = "n/a";
             length = tokens.length;
+            
             if (length == 3) {
                 String current = tokens[2];
                 hasNumber = checkForNumbers(current);
@@ -32,6 +33,7 @@ public class Main {
                 displacement = tokens[2];
                 efficiency = tokens[3];
             }
+            
             Engine currentEngine = new Engine(engineModel, power, displacement, efficiency);
             engineParameters.putIfAbsent(engineModel, new ArrayList<>());
             engineParameters.get(engineModel).add(currentEngine);
@@ -47,9 +49,11 @@ public class Main {
             String weight = "n/a";
             String color = "n/a";
             length = tokens.length;
+            
             if (length == 3) {
                 String current = tokens[2];
                 hasNumber = checkForNumbers(current);
+                
                 if (hasNumber) {
                     weight = current;
                 } else {
@@ -61,6 +65,7 @@ public class Main {
                 weight = tokens[2];
                 color = tokens[3];
             }
+            
             Engine enginePerThisCar = getParticularEngine(engine, engineParameters);
             Car currentCar = new Car(model, enginePerThisCar, weight, color);
             int position = i;
