@@ -24,7 +24,6 @@ public class SoftUni_Parking_05 {
                     System.out.printf("%s registered %s successfully%n", name, licensePlateNumber);
                 }
             } else if (command.equals("unregister")) {
-
                 if (!register.containsKey(name)) {
                     System.out.printf("ERROR: user %s not found%n", name);
                 } else {
