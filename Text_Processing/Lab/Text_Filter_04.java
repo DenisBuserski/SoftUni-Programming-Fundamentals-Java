@@ -8,7 +8,6 @@ public class Text_Filter_04 {
         String input = scanner.nextLine();
 
         for (String forbiddenWord : forbiddenWords) {
-
             if (input.contains(forbiddenWord)) {
                 String wordOfStars = convertWordToStars(forbiddenWord);
                 input = input.replace(forbiddenWord, wordOfStars);
