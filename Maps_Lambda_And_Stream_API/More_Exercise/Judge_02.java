@@ -29,6 +29,7 @@ public class Judge_02 {
                     storedValues.get(contest).put(username, points);
                 }
             }
+            
             input = scanner.nextLine();
         }
 
