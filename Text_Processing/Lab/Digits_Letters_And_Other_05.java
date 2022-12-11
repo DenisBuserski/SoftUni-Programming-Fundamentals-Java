@@ -21,6 +21,7 @@ public class Digits_Letters_And_Other_05 {
                 others.append(currentSymbol);
             }
         }
+        
         System.out.println(digits);
         System.out.println(letters);
         System.out.println(others);
