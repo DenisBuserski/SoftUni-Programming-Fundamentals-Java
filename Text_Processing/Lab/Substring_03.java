@@ -9,7 +9,6 @@ public class Substring_03 {
 
         while (input.contains(wordToRemove)) {
             input = removeOccurrence(input, wordToRemove);
-
         }
         
         System.out.println(input);
