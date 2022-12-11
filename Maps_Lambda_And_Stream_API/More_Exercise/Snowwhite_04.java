@@ -7,10 +7,9 @@ public class Snowwhite_04 {
         Scanner scanner = new Scanner(System.in);
 
         Map<String, LinkedHashMap<String, Integer>> dwarfs = new LinkedHashMap<>();
+        
         String input;
-
         while (!"Once upon a time".equals(input = scanner.nextLine())) {
-
             String[] lineInput = input.split(" <:> ");
             String name = lineInput[0];
             String hatColor = lineInput[1];
@@ -23,7 +22,6 @@ public class Snowwhite_04 {
                 dwarfs.get(hatColor).put(name, physics);
             }
         }
-
 
         Map<String, Integer> print = new LinkedHashMap<>();
 
