@@ -15,8 +15,10 @@ public class MOBA_Challenger_03 {
                 String player = tokens[0];
                 String position = tokens[1];
                 int skill = Integer.parseInt(tokens[2]);
+                
                 LinkedHashMap<String, Integer> current = new LinkedHashMap<>();
                 current.put(position, skill);
+                
                 if (!players.containsKey(player)) {
                     players.put(player, current);
                 } else {
